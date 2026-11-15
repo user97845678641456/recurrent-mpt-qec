@@ -1,0 +1,26 @@
+[
+  {
+    "code": "bb72",
+    "truth_mapping": true,
+    "fresh_sampling": true,
+    "device": "cuda",
+    "gpu_BF16_original_logits_exact": true,
+    "max_difference": 0.0
+  },
+  {
+    "code": "bb90",
+    "truth_mapping": true,
+    "fresh_sampling": true,
+    "device": "cuda",
+    "gpu_BF16_original_logits_exact": true,
+    "max_difference": 0.0
+  },
+  {
+    "code": "bb144",
+    "truth_mapping": true,
+    "fresh_sampling": true,
+    "device": "cuda",
+    "gpu_BF16_original_logits_exact": true,
+    "max_difference": 0.0
+  }
+]

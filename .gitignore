@@ -1,0 +1,12 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.numba_cache/
+third_party/
+runs/
+*.log
+.env
+.env.*
+dist/
+build/

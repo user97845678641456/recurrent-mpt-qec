@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recurrent-mpt-qec"
+version = "0.1.0"
+description = "Recurrent CrossMPT soft information with CS8 for BB quantum memory experiments"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "torch", "stim", "ldpc", "numba", "matplotlib"]
+
+[project.scripts]
+qec-mpt = "qec_mpt.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,8 @@
+{
+  "extra_samples": 900000,
+  "selection_score": 1.7841661183247308,
+  "selection": "minimum independent validation normalized BCE",
+  "training_extra_samples_executed": 900000,
+  "stopping_reason": "resource_cap",
+  "plateau_established": false
+}

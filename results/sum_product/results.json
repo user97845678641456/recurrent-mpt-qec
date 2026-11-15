@@ -1,0 +1,674 @@
+[
+  {
+    "code": "bb72",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 44,
+        "error_rate": 0.044,
+        "ci95": [
+          0.03293821458841875,
+          0.05855178915040732
+        ]
+      },
+      "MS_CS8": {
+        "failures": 37,
+        "error_rate": 0.037,
+        "ci95": [
+          0.02696118087555497,
+          0.05058239748206888
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 25,
+        "error_rate": 0.025,
+        "ci95": [
+          0.016990131293434248,
+          0.036645289267842926
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.019,
+        "ci95": [
+          0.007458666247578455,
+          0.030541333752421546
+        ],
+        "MPT_only_success": 27,
+        "baseline_only_success": 8
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.012,
+        "ci95": [
+          0.002422059378627023,
+          0.021577940621372978
+        ],
+        "MPT_only_success": 18,
+        "baseline_only_success": 6
+      }
+    },
+    "pure_SPA_error_rate": 0.194,
+    "SPA_syndrome_valid_rate": 0.813,
+    "mean_iterations": 49.939,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 745284
+  },
+  {
+    "code": "bb72",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 129,
+        "error_rate": 0.129,
+        "ci95": [
+          0.10963544529450556,
+          0.15120400950177623
+        ]
+      },
+      "MS_CS8": {
+        "failures": 138,
+        "error_rate": 0.138,
+        "ci95": [
+          0.11800457326997485,
+          0.16076599987356696
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 95,
+        "error_rate": 0.095,
+        "ci95": [
+          0.07834523457904785,
+          0.11475443979425165
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.034,
+        "ci95": [
+          0.015309477106136223,
+          0.05269052289386378
+        ],
+        "MPT_only_success": 63,
+        "baseline_only_success": 29
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.043,
+        "ci95": [
+          0.024904599337811688,
+          0.061095400662188305
+        ],
+        "MPT_only_success": 65,
+        "baseline_only_success": 22
+      }
+    },
+    "pure_SPA_error_rate": 0.378,
+    "SPA_syndrome_valid_rate": 0.644,
+    "mean_iterations": 85.235,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 671160
+  },
+  {
+    "code": "bb72",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 888,
+        "error_rate": 0.296,
+        "ci95": [
+          0.27993422982313665,
+          0.31258754045679615
+        ]
+      },
+      "MS_CS8": {
+        "failures": 938,
+        "error_rate": 0.31266666666666665,
+        "ci95": [
+          0.29632643239652473,
+          0.3294860429258973
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 719,
+        "error_rate": 0.23966666666666667,
+        "ci95": [
+          0.2247303094617961,
+          0.25526887777452356
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.05633333333333333,
+        "ci95": [
+          0.04118418455786109,
+          0.07148248210880558
+        ],
+        "MPT_only_success": 358,
+        "baseline_only_success": 189
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.073,
+        "ci95": [
+          0.05811337223524033,
+          0.08788662776475967
+        ],
+        "MPT_only_success": 377,
+        "baseline_only_success": 158
+      }
+    },
+    "pure_SPA_error_rate": 0.6146666666666667,
+    "SPA_syndrome_valid_rate": 0.41133333333333333,
+    "mean_iterations": 128.18233333333333,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 1434524
+  },
+  {
+    "code": "bb72",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 489,
+        "error_rate": 0.489,
+        "ci95": [
+          0.45811915212327226,
+          0.51996503656341
+        ]
+      },
+      "MS_CS8": {
+        "failures": 527,
+        "error_rate": 0.527,
+        "ci95": [
+          0.49601123450986223,
+          0.5577821205319179
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 439,
+        "error_rate": 0.439,
+        "ci95": [
+          0.40853319214335365,
+          0.46993367239188405
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.05,
+        "ci95": [
+          0.020552624090626553,
+          0.07944737590937345
+        ],
+        "MPT_only_success": 139,
+        "baseline_only_success": 89
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.088,
+        "ci95": [
+          0.05902947116221138,
+          0.1169705288377886
+        ],
+        "MPT_only_success": 157,
+        "baseline_only_success": 69
+      }
+    },
+    "pure_SPA_error_rate": 0.798,
+    "SPA_syndrome_valid_rate": 0.226,
+    "mean_iterations": 161.238,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 316118
+  },
+  {
+    "code": "bb90",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 10,
+        "error_rate": 0.01,
+        "ci95": [
+          0.005440754445529338,
+          0.01830946887031448
+        ]
+      },
+      "MS_CS8": {
+        "failures": 11,
+        "error_rate": 0.011,
+        "ci95": [
+          0.006153174098086734,
+          0.019589395700785973
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 2,
+        "error_rate": 0.002,
+        "ci95": [
+          0.0005486435881207445,
+          0.00726280786349195
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.008,
+        "ci95": [
+          0.0012251024482405034,
+          0.014774897551759498
+        ],
+        "MPT_only_success": 10,
+        "baseline_only_success": 2
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.009,
+        "ci95": [
+          0.0025201528707215004,
+          0.015479847129278499
+        ],
+        "MPT_only_success": 10,
+        "baseline_only_success": 1
+      }
+    },
+    "pure_SPA_error_rate": 0.191,
+    "SPA_syndrome_valid_rate": 0.809,
+    "mean_iterations": 52.909,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 1050753
+  },
+  {
+    "code": "bb90",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 51,
+        "error_rate": 0.051,
+        "ci95": [
+          0.039000942775267125,
+          0.06643548634476118
+        ]
+      },
+      "MS_CS8": {
+        "failures": 45,
+        "error_rate": 0.045,
+        "ci95": [
+          0.03379951228563198,
+          0.05968283793622299
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 19,
+        "error_rate": 0.019,
+        "ci95": [
+          0.012196885750791052,
+          0.029484455912312774
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.032,
+        "ci95": [
+          0.017727077457019604,
+          0.0462729225429804
+        ],
+        "MPT_only_success": 43,
+        "baseline_only_success": 11
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.026,
+        "ci95": [
+          0.013394081247779374,
+          0.03860591875222062
+        ],
+        "MPT_only_success": 34,
+        "baseline_only_success": 8
+      }
+    },
+    "pure_SPA_error_rate": 0.362,
+    "SPA_syndrome_valid_rate": 0.638,
+    "mean_iterations": 87.768,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 940090
+  },
+  {
+    "code": "bb90",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 475,
+        "error_rate": 0.15833333333333333,
+        "ci95": [
+          0.14570829524894602,
+          0.17183225138002667
+        ]
+      },
+      "MS_CS8": {
+        "failures": 554,
+        "error_rate": 0.18466666666666667,
+        "ci95": [
+          0.17118784335873458,
+          0.19895201723737096
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 345,
+        "error_rate": 0.115,
+        "ci95": [
+          0.10407319548539054,
+          0.1269115180331104
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.043333333333333335,
+        "ci95": [
+          0.029777490520526407,
+          0.056889176146140266
+        ],
+        "MPT_only_success": 283,
+        "baseline_only_success": 153
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.06966666666666667,
+        "ci95": [
+          0.05604682850707531,
+          0.08328650482625802
+        ],
+        "MPT_only_success": 329,
+        "baseline_only_success": 120
+      }
+    },
+    "pure_SPA_error_rate": 0.6356666666666667,
+    "SPA_syndrome_valid_rate": 0.36466666666666664,
+    "mean_iterations": 138.56333333333333,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 1999191
+  },
+  {
+    "code": "bb90",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 314,
+        "error_rate": 0.314,
+        "ci95": [
+          0.28599234617462566,
+          0.3434312079820008
+        ]
+      },
+      "MS_CS8": {
+        "failures": 387,
+        "error_rate": 0.387,
+        "ci95": [
+          0.3572991740907023,
+          0.41756567332703315
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 287,
+        "error_rate": 0.287,
+        "ci95": [
+          0.25981978203920064,
+          0.3158104170756457
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.027,
+        "ci95": [
+          -0.0015705538999535376,
+          0.05557055389995354
+        ],
+        "MPT_only_success": 120,
+        "baseline_only_success": 93
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.1,
+        "ci95": [
+          0.07158268936821179,
+          0.1284173106317882
+        ],
+        "MPT_only_success": 160,
+        "baseline_only_success": 60
+      }
+    },
+    "pure_SPA_error_rate": 0.82,
+    "SPA_syndrome_valid_rate": 0.18,
+    "mean_iterations": 170.717,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 320029
+  },
+  {
+    "code": "bb144",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 6,
+        "error_rate": 0.006,
+        "ci95": [
+          0.002752669141876431,
+          0.013028168241851826
+        ]
+      },
+      "MS_CS8": {
+        "failures": 5,
+        "error_rate": 0.005,
+        "ci95": [
+          0.0021375355273245064,
+          0.011650955373374858
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 2,
+        "error_rate": 0.002,
+        "ci95": [
+          0.0005486435881207445,
+          0.00726280786349195
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.004,
+        "ci95": [
+          -0.0015409418365866685,
+          0.009540941836586669
+        ],
+        "MPT_only_success": 6,
+        "baseline_only_success": 2
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.003,
+        "ci95": [
+          -0.0021849309647389813,
+          0.008184930964738981
+        ],
+        "MPT_only_success": 5,
+        "baseline_only_success": 2
+      }
+    },
+    "pure_SPA_error_rate": 0.247,
+    "SPA_syndrome_valid_rate": 0.753,
+    "mean_iterations": 69.255,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 3760318
+  },
+  {
+    "code": "bb144",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 37,
+        "error_rate": 0.037,
+        "ci95": [
+          0.02696118087555497,
+          0.05058239748206888
+        ]
+      },
+      "MS_CS8": {
+        "failures": 24,
+        "error_rate": 0.024,
+        "ci95": [
+          0.016180168466637168,
+          0.03546290561161111
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 17,
+        "error_rate": 0.017,
+        "ci95": [
+          0.010640689856816463,
+          0.02705595884022959
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.02,
+        "ci95": [
+          0.00797549382516069,
+          0.03202450617483931
+        ],
+        "MPT_only_success": 29,
+        "baseline_only_success": 9
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.007,
+        "ci95": [
+          -0.004593194717754192,
+          0.018593194717754193
+        ],
+        "MPT_only_success": 21,
+        "baseline_only_success": 14
+      }
+    },
+    "pure_SPA_error_rate": 0.471,
+    "SPA_syndrome_valid_rate": 0.529,
+    "mean_iterations": 112.876,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 3238983
+  },
+  {
+    "code": "bb144",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 339,
+        "error_rate": 0.113,
+        "ci95": [
+          0.10216242898759104,
+          0.12482739992581121
+        ]
+      },
+      "MS_CS8": {
+        "failures": 371,
+        "error_rate": 0.12366666666666666,
+        "ci95": [
+          0.11236555571112011,
+          0.13593032442947514
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 233,
+        "error_rate": 0.07766666666666666,
+        "ci95": [
+          0.06862024174778891,
+          0.08779329247553633
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.035333333333333335,
+        "ci95": [
+          0.023069235994999066,
+          0.04759743067166761
+        ],
+        "MPT_only_success": 231,
+        "baseline_only_success": 125
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.046,
+        "ci95": [
+          0.034099957253801876,
+          0.05790004274619812
+        ],
+        "MPT_only_success": 238,
+        "baseline_only_success": 100
+      }
+    },
+    "pure_SPA_error_rate": 0.703,
+    "SPA_syndrome_valid_rate": 0.297,
+    "mean_iterations": 153.59966666666668,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 5943550
+  },
+  {
+    "code": "bb144",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "SPA_CS8": {
+        "failures": 334,
+        "error_rate": 0.334,
+        "ci95": [
+          0.3054523188740049,
+          0.3638181649431993
+        ]
+      },
+      "MS_CS8": {
+        "failures": 390,
+        "error_rate": 0.39,
+        "ci95": [
+          0.36024540636962965,
+          0.42059648049719245
+        ]
+      },
+      "MPT_CS8": {
+        "failures": 292,
+        "error_rate": 0.292,
+        "ci95": [
+          0.2646576946068605,
+          0.3209342369231303
+        ]
+      }
+    },
+    "paired": {
+      "MPT_vs_SPA_CS8": {
+        "success_gain": 0.042,
+        "ci95": [
+          0.011228469249894239,
+          0.07277153075010577
+        ],
+        "MPT_only_success": 145,
+        "baseline_only_success": 103
+      },
+      "MPT_vs_MS_CS8": {
+        "success_gain": 0.098,
+        "ci95": [
+          0.06696962523981127,
+          0.12903037476018872
+        ],
+        "MPT_only_success": 179,
+        "baseline_only_success": 81
+      }
+    },
+    "pure_SPA_error_rate": 0.892,
+    "SPA_syndrome_valid_rate": 0.108,
+    "mean_iterations": 184.198,
+    "nan_LLR_count": 0,
+    "inf_LLR_count": 879339
+  }
+]

@@ -1,0 +1,614 @@
+[
+  {
+    "code": "bb72",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 37,
+        "logical_error_rate": 0.037,
+        "ci95": [
+          0.02696118087555497,
+          0.05058239748206888
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 25,
+        "logical_error_rate": 0.025,
+        "ci95": [
+          0.016990131293434248,
+          0.036645289267842926
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 34,
+        "logical_error_rate": 0.034,
+        "ci95": [
+          0.024431348663226528,
+          0.04713519024531065
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.012,
+        "ci95": [
+          0.002422059378627023,
+          0.021577940621372978
+        ],
+        "MPT_only_success": 18,
+        "BP_only_success": 6
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.003,
+        "ci95": [
+          -0.007558565665321635,
+          0.013558565665321636
+        ],
+        "MPT_only_success": 16,
+        "BP_only_success": 13
+      }
+    }
+  },
+  {
+    "code": "bb72",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 138,
+        "logical_error_rate": 0.138,
+        "ci95": [
+          0.11800457326997485,
+          0.16076599987356696
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 95,
+        "logical_error_rate": 0.095,
+        "ci95": [
+          0.07834523457904785,
+          0.11475443979425165
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 104,
+        "logical_error_rate": 0.104,
+        "ci95": [
+          0.08657102809826853,
+          0.12445976462229097
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.043,
+        "ci95": [
+          0.024904599337811688,
+          0.061095400662188305
+        ],
+        "MPT_only_success": 65,
+        "BP_only_success": 22
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.034,
+        "ci95": [
+          0.014702116211389431,
+          0.05329788378861057
+        ],
+        "MPT_only_success": 66,
+        "BP_only_success": 32
+      }
+    }
+  },
+  {
+    "code": "bb72",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 938,
+        "logical_error_rate": 0.31266666666666665,
+        "ci95": [
+          0.29632643239652473,
+          0.3294860429258973
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 719,
+        "logical_error_rate": 0.23966666666666667,
+        "ci95": [
+          0.2247303094617961,
+          0.25526887777452356
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 758,
+        "logical_error_rate": 0.25266666666666665,
+        "ci95": [
+          0.23744011747882457,
+          0.2685258196906366
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.073,
+        "ci95": [
+          0.05811337223524033,
+          0.08788662776475967
+        ],
+        "MPT_only_success": 377,
+        "BP_only_success": 158
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.06,
+        "ci95": [
+          0.045082040813842164,
+          0.07491795918615783
+        ],
+        "MPT_only_success": 356,
+        "BP_only_success": 176
+      }
+    }
+  },
+  {
+    "code": "bb72",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 527,
+        "logical_error_rate": 0.527,
+        "ci95": [
+          0.49601123450986223,
+          0.5577821205319179
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 439,
+        "logical_error_rate": 0.439,
+        "ci95": [
+          0.40853319214335365,
+          0.46993367239188405
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 452,
+        "logical_error_rate": 0.452,
+        "ci95": [
+          0.4213955940183349,
+          0.48297177479627845
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.088,
+        "ci95": [
+          0.05902947116221138,
+          0.1169705288377886
+        ],
+        "MPT_only_success": 157,
+        "BP_only_success": 69
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.075,
+        "ci95": [
+          0.046489808295435274,
+          0.10351019170456471
+        ],
+        "MPT_only_success": 146,
+        "BP_only_success": 71
+      }
+    }
+  },
+  {
+    "code": "bb90",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 11,
+        "logical_error_rate": 0.011,
+        "ci95": [
+          0.006153174098086734,
+          0.019589395700785973
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 2,
+        "logical_error_rate": 0.002,
+        "ci95": [
+          0.0005486435881207445,
+          0.00726280786349195
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 2,
+        "logical_error_rate": 0.002,
+        "ci95": [
+          0.0005486435881207445,
+          0.00726280786349195
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.009,
+        "ci95": [
+          0.0025201528707215004,
+          0.015479847129278499
+        ],
+        "MPT_only_success": 10,
+        "BP_only_success": 1
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.009,
+        "ci95": [
+          0.003143590867440361,
+          0.014856409132559638
+        ],
+        "MPT_only_success": 9,
+        "BP_only_success": 0
+      }
+    }
+  },
+  {
+    "code": "bb90",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 45,
+        "logical_error_rate": 0.045,
+        "ci95": [
+          0.03379951228563198,
+          0.05968283793622299
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 19,
+        "logical_error_rate": 0.019,
+        "ci95": [
+          0.012196885750791052,
+          0.029484455912312774
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 24,
+        "logical_error_rate": 0.024,
+        "ci95": [
+          0.016180168466637168,
+          0.03546290561161111
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.026,
+        "ci95": [
+          0.013394081247779374,
+          0.03860591875222062
+        ],
+        "MPT_only_success": 34,
+        "BP_only_success": 8
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.021,
+        "ci95": [
+          0.008823114892102708,
+          0.03317688510789729
+        ],
+        "MPT_only_success": 30,
+        "BP_only_success": 9
+      }
+    }
+  },
+  {
+    "code": "bb90",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 554,
+        "logical_error_rate": 0.18466666666666667,
+        "ci95": [
+          0.17118784335873458,
+          0.19895201723737096
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 345,
+        "logical_error_rate": 0.115,
+        "ci95": [
+          0.10407319548539054,
+          0.1269115180331104
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 348,
+        "logical_error_rate": 0.116,
+        "ci95": [
+          0.105028991660456,
+          0.12795316416059427
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.06966666666666667,
+        "ci95": [
+          0.05604682850707531,
+          0.08328650482625802
+        ],
+        "MPT_only_success": 329,
+        "BP_only_success": 120
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.06866666666666667,
+        "ci95": [
+          0.0552137734277626,
+          0.08211955990557074
+        ],
+        "MPT_only_success": 322,
+        "BP_only_success": 116
+      }
+    }
+  },
+  {
+    "code": "bb90",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 387,
+        "logical_error_rate": 0.387,
+        "ci95": [
+          0.3572991740907023,
+          0.41756567332703315
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 287,
+        "logical_error_rate": 0.287,
+        "ci95": [
+          0.25981978203920064,
+          0.3158104170756457
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 270,
+        "logical_error_rate": 0.27,
+        "ci95": [
+          0.2434023676164596,
+          0.29835794128689563
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.1,
+        "ci95": [
+          0.07158268936821179,
+          0.1284173106317882
+        ],
+        "MPT_only_success": 160,
+        "BP_only_success": 60
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.117,
+        "ci95": [
+          0.08849412477185586,
+          0.14550587522814415
+        ],
+        "MPT_only_success": 171,
+        "BP_only_success": 54
+      }
+    }
+  },
+  {
+    "code": "bb144",
+    "p": 0.003,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 5,
+        "logical_error_rate": 0.005,
+        "ci95": [
+          0.0021375355273245064,
+          0.011650955373374858
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 2,
+        "logical_error_rate": 0.002,
+        "ci95": [
+          0.0005486435881207445,
+          0.00726280786349195
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 4,
+        "logical_error_rate": 0.004,
+        "ci95": [
+          0.0015565881404084698,
+          0.010239556277262005
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.003,
+        "ci95": [
+          -0.0021849309647389813,
+          0.008184930964738981
+        ],
+        "MPT_only_success": 5,
+        "BP_only_success": 2
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.001,
+        "ci95": [
+          -0.004187896748459117,
+          0.006187896748459117
+        ],
+        "MPT_only_success": 4,
+        "BP_only_success": 3
+      }
+    }
+  },
+  {
+    "code": "bb144",
+    "p": 0.004,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 24,
+        "logical_error_rate": 0.024,
+        "ci95": [
+          0.016180168466637168,
+          0.03546290561161111
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 17,
+        "logical_error_rate": 0.017,
+        "ci95": [
+          0.010640689856816463,
+          0.02705595884022959
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 18,
+        "logical_error_rate": 0.018,
+        "ci95": [
+          0.011415740009567932,
+          0.02827325517050701
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.007,
+        "ci95": [
+          -0.004593194717754192,
+          0.018593194717754193
+        ],
+        "MPT_only_success": 21,
+        "BP_only_success": 14
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.006,
+        "ci95": [
+          -0.005428329235242968,
+          0.01742832923524297
+        ],
+        "MPT_only_success": 20,
+        "BP_only_success": 14
+      }
+    }
+  },
+  {
+    "code": "bb144",
+    "p": 0.005,
+    "shots": 3000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 371,
+        "logical_error_rate": 0.12366666666666666,
+        "ci95": [
+          0.11236555571112011,
+          0.13593032442947514
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 233,
+        "logical_error_rate": 0.07766666666666666,
+        "ci95": [
+          0.06862024174778891,
+          0.08779329247553633
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 229,
+        "logical_error_rate": 0.07633333333333334,
+        "ci95": [
+          0.06736405211705615,
+          0.08638622570287
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.046,
+        "ci95": [
+          0.034099957253801876,
+          0.05790004274619812
+        ],
+        "MPT_only_success": 238,
+        "BP_only_success": 100
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.04733333333333333,
+        "ci95": [
+          0.03554818639637331,
+          0.05911848027029335
+        ],
+        "MPT_only_success": 237,
+        "BP_only_success": 95
+      }
+    }
+  },
+  {
+    "code": "bb144",
+    "p": 0.006,
+    "shots": 1000,
+    "arms": {
+      "BP_CS8_prior": {
+        "failures": 390,
+        "logical_error_rate": 0.39,
+        "ci95": [
+          0.36024540636962965,
+          0.42059648049719245
+        ]
+      },
+      "MPT_CS8_prior": {
+        "failures": 292,
+        "logical_error_rate": 0.292,
+        "ci95": [
+          0.2646576946068605,
+          0.3209342369231303
+        ]
+      },
+      "MPT_CS8_posterior": {
+        "failures": 284,
+        "logical_error_rate": 0.284,
+        "ci95": [
+          0.2569190250903589,
+          0.3127341345754008
+        ]
+      }
+    },
+    "paired": {
+      "MPT_CS8_prior": {
+        "success_gain": 0.098,
+        "ci95": [
+          0.06696962523981127,
+          0.12903037476018872
+        ],
+        "MPT_only_success": 179,
+        "BP_only_success": 81
+      },
+      "MPT_CS8_posterior": {
+        "success_gain": 0.106,
+        "ci95": [
+          0.07470014275650025,
+          0.13729985724349975
+        ],
+        "MPT_only_success": 186,
+        "BP_only_success": 80
+      }
+    }
+  }
+]

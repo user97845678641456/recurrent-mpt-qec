@@ -1,0 +1,6 @@
+{
+  "parts": 180,
+  "all_parts_present": true,
+  "checkpoints_unchanged": true,
+  "syndrome_and_truth_parity_checks": true
+}

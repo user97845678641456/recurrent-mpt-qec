@@ -1,0 +1,37 @@
+{
+  "code": "bb144",
+  "n": 144,
+  "k": 12,
+  "profile": {
+    "l": 12,
+    "m": 6,
+    "a": [
+      3,
+      -1,
+      -2
+    ],
+    "b": [
+      1,
+      2,
+      -3
+    ],
+    "k": 12
+  },
+  "rounds": 12,
+  "detectors": 1872,
+  "output_detectors": 936,
+  "fault_variables": 8784,
+  "rank_H": 930,
+  "parameters": 290338,
+  "circuit": {
+    "noisy_rounds": 12,
+    "frames": 13,
+    "basis": "author X-memory; logical X readout",
+    "initial": "author ideal preparation and ideal initial check round",
+    "terminal": "author ideal final check round and ideal X readout",
+    "retained_detectors": 1872,
+    "source_sha256": "c0fae26b370f2e71a4e4bb180f541b0377f3343dc07df8be626eb66d019e7d37",
+    "logical_sha256": "5406deaf704dc73e4cdda47ff91f225afeb57f28eec644f2b97a38329006882d",
+    "alignment": "calls unchanged author Code.create_syndrome_measurement_circuit and gate helpers; official A/B ordering and saved logical X operators"
+  }
+}
