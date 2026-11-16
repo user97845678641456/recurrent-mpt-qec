@@ -2,6 +2,8 @@
 
 作者：钟路安｜西安交通大学数学与统计学院
 
+项目代码：[GitHub仓库](https://github.com/user97845678641456/recurrent-mpt-qec)
+
 ## 摘要
 
 本研究面向BB码的多轮含噪测量，构建循环交叉注意力与有序统计融合解码方案。模型利用共享参数的CrossMPT逐帧处理两类校验的检测事件，并结合噪声条件预测各电路故障的概率；随后通过CS8有序统计后处理生成满足校验约束的恢复。模型以在线生成的电路故障样本训练，采用二元交叉熵损失。
@@ -274,6 +276,8 @@ BP基线包括min-sum和标准sum-product两种更新规则，均采用并行调
 在上述硬件与64块批量配置下，MPT+CS8的吞吐量达到32进程BP+CS8的3.20至6.38倍，体现出该实现的批量解码效率。
 
 ## 参考文献与代码来源
+
+本项目代码与实验材料：[github.com/user97845678641456/recurrent-mpt-qec](https://github.com/user97845678641456/recurrent-mpt-qec)。仓库提供模型权重、测试数据、实验结果及复现命令。
 
 1. [Bravyi et al. High-threshold and low-overhead fault-tolerant quantum memory. Nature, 2024.](https://www.nature.com/articles/s41586-024-07107-7)
 2. [CrossMPT: Cross-attention Message-Passing Transformer for Error Correcting Codes. ICLR 2025.](https://arxiv.org/abs/2405.01033) [官方代码](https://github.com/iil-postech/crossmpt)

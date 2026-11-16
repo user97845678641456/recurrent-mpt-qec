@@ -42,7 +42,7 @@ def convert(source):
     while i<len(lines):
         line=lines[i].strip()
         if not line:i+=1;continue
-        if line.startswith('# ') or line.startswith('作者：') or line.startswith('**基线更新说明'):i+=1;continue
+        if line.startswith('# ') or line.startswith('作者：') or line.startswith('项目代码：') or line.startswith('**基线更新说明'):i+=1;continue
         if line.startswith('## 实验材料索引'):break
         if line==r'\[':
             block=[line];i+=1
@@ -103,6 +103,7 @@ PREAMBLE=r'''\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
 \vspace{0.7em}{\large 钟路安}\par
 西安交通大学数学与统计学院\par
 \vspace{0.35em}{\small AI for Science 项目技术报告\quad 2026年11月16日}
+\par\vspace{0.4em}{\small 项目代码：\url{https://github.com/user97845678641456/recurrent-mpt-qec}}
 \end{center}
 \vspace{0.5em}
 '''
