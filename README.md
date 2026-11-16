@@ -1,6 +1,6 @@
 # Recurrent MPT + CS8 for BB quantum memory
 
-Final no-auxiliary-head release (2026-11-16). Two-layer, four-head, d=64 recurrent CrossMPT; 12 noisy measurement rounds; parallel DEM fault logits followed by shared CS8. **Training uses fault BCE only.** BB72 and BB90 trained from scratch on 1M samples each; BB144 from scratch and continued to 6M. One training seed per code.
+Research release (2026-11-16). Two-layer, four-head, d=64 recurrent CrossMPT; 12 noisy measurement rounds; parallel DEM fault logits followed by shared CS8. **Training uses fault BCE only.** BB72 and BB90 trained from scratch on 1M samples each; BB144 from scratch and continued to 6M. One training seed per code.
 
 ## Circuit noise p=0.005
 
@@ -10,13 +10,12 @@ Final no-auxiliary-head release (2026-11-16). Two-layer, four-head, d=64 recurre
 | BB90 | 1000000 | 5000 | 17.28% | 15.52% | **11.52%** | 25.8% |
 | BB144 | 6000000 | 10000 | 12.29% | 11.65% | **8.33%** | 28.5% |
 
-Errors are logical frame error rates, lower is better. Every method shares the same test frames within each code/noise point. Four noise strengths, 32000 final test frames in total. Standard BP means sum-product, parallel schedule, max200 iterations; min-sum is reported separately. Same signed zero-centered, prior-scored CS8 with shortcuts disabled. Models are selected by independent validation fault BCE, never by the final test FER. Different codes have different training budgets. The six-million BB144 checkpoint still improved validation loss when training was paused; this is not a convergence claim.
+Errors are logical frame error rates, lower is better. Every method shares the same test frames within each code/noise point. Four noise strengths, 32000 final test frames in total. Standard BP means sum-product, parallel schedule, max200 iterations; min-sum is reported separately. Same signed zero-centered, prior-scored CS8 with shortcuts disabled. Models are selected by independent validation fault BCE, never by the final test FER. Different codes have different training budgets.
 
 ## Report and artifacts
 
 - [Technical report (PDF)](output/pdf/recurrent_mpt_qec_technical_report.pdf), [Markdown](report/technical_report.md), [LaTeX source](report/technical_report.tex)
 - [Main results, confidence intervals and paired statistics](results/sum_product/results.json)
-- [BB144 training progress comparisons](results/bb144_training_progress.json)
 - Model weights: `checkpoints/`; circuits and code matrices: `assets/`
 - Test sets and packed fault truth: `data/report_test/`; per-frame predictions: `results/sum_product/`
 - [Protocol and checkpoint hashes](provenance/protocol.json); training histories and selected sample counts: `provenance/`
@@ -42,12 +41,12 @@ python scripts/resume_training.py --source runs/bb144_1m --output runs/bb144_4m 
 python scripts/resume_training.py --source runs/bb144_4m --output runs/bb144_6m --samples 6000000
 ```
 
-The first100k samples use cosine3e-4 to3e-5, then AdamW is reset at1e-4, halved every200k with floor1e-5. Batch64, EMA.99, gradient clip1, weight decay1e-4;1024 fixed validation examples per noise. Continuation preserves AdamW, EMA and RNG states; it does not initialize from auxiliary-trained weights. An interrupted run resumes using its exact saved command/config. Published inference checkpoints omit optimizer states; regenerate them by training if needed.
+The first100k samples use cosine3e-4 to3e-5, then AdamW is reset at1e-4, halved every200k with floor1e-5. Batch64, EMA.99, gradient clip1, weight decay1e-4;1024 fixed validation examples per noise. Continuation preserves AdamW, EMA and RNG states. An interrupted run resumes using its exact saved command/config. Published inference checkpoints omit optimizer states; regenerate them by training if needed.
 
-## Scope
+## Experimental scope
 
-MPT receives both detector classes; BP uses one detector class. This compares complete pipelines with different input information, rather than isolating the neural architecture. Only one commuting logical-observable set is tracked. No hardware-independent speed, proven convergence, or shared-weight cross-code generalization claim. Prior BB72 speed experiments are not measurements of every final checkpoint. Historical auxiliary models appear only in supplementary progress comparisons; their training histories differ, so those comparisons do not establish the auxiliary head's causal effect.
+The experiments use three BB codes with 12 noisy measurement rounds. MPT receives both detector classes and BP operates on the selected single-class detector graph; they share the output fault variables and CS8 recovery constraints. The metric is the logical frame error rate for the tracked commuting logical-observable set. Each code uses one training seed.
 
 ## Sources and attribution
 
-[THIRD_PARTY.md](THIRD_PARTY.md) records upstream projects and rights. CrossMPT runtime sources are pinned and fetched separately; official CrossMPT has no auxiliary logical head. This project adapts CrossMPT and recurrent measurement-history processing, and combines them with CS8; it does not claim those components as original inventions. Only the report-related implementation and artifacts are included; exploratory research directories are excluded.
+[THIRD_PARTY.md](THIRD_PARTY.md) records upstream projects and rights. CrossMPT runtime sources are pinned and fetched separately. This project adapts CrossMPT and recurrent measurement-history processing, and combines them with CS8; it does not claim those components as original inventions. Only the report-related implementation and artifacts are included; exploratory research directories are excluded.

@@ -20,7 +20,7 @@ def overview():
     arrow(ax,(4.05,4.3),(5.35,4.3),BLUE)
     arrow(ax,(8.45,4.3),(10.35,4.3),BLUE)
     arrow(ax,(11.85,4.3),(13.85,4.3),BLUE)
-    text(ax,9,3.3,r'横向传递的只有隐变量 $(V,C)$，不是上一轮的 bit 或 logits',10.5,color=BLUE)
+    text(ax,9,3.3,r'隐变量 $(V,C)$ 沿时间传递，整合多轮测量信息',10.5,color=BLUE)
     box(ax,6.1,1.95,9.0,1.0,r'保存各帧隐变量 $C_0,C_1,\ldots,C_{12}$',size=11)
     box(ax,14.6,1.95,5.2,1.0,r'最终隐变量 $V_{12},C_{12}$',size=11)
     route(ax,[(2.5,3.7),(1.0,3.7),(1.0,1.95),(1.45,1.95)],TEAL)
@@ -65,7 +65,7 @@ def readout():
     arrow(ax,(9,5.2),(9,4.4),BLUE)
     box(ax,9,1.5,11.5,1.15,r'$z_i=\log\frac{q_i}{1-q_i}+r_{\theta,i}$',size=16)
     arrow(ax,(9,3.0),(9,2.2),BLUE)
-    text(ax,9,.35,'所有故障 i 并行计算；输出 '+r'$z$'+' 后再接 CS8。训练与推理均不使用辅助逻辑头。',9.5,color=GRAY)
+    text(ax,9,.35,'所有故障 i 并行计算；输出 '+r'$z$'+' 后再接 CS8。',9.5,color=GRAY)
     save(fig,'model_03_logits_head')
 
 if __name__=='__main__':overview();layer();readout();print('THREE_MODEL_PANELS_CREATED')

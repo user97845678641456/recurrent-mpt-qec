@@ -72,7 +72,8 @@ def convert(source):
             # Use vector figures where available.
             path=REPORT/image.group(2);vector=path.with_suffix('.pdf')
             path=vector if vector.exists() else path
-            out.append(r'\begin{figure}[htbp]\centering\includegraphics[width=\linewidth]{'+path.relative_to(REPORT).as_posix()+r'}\caption{'+inline(image.group(1))+'}'+r'\end{figure}')
+            placement='H' if 'model_03_logits_head' in path.name else 'htbp'
+            out.append(r'\begin{figure}['+placement+r']\centering\includegraphics[width=\linewidth]{'+path.relative_to(REPORT).as_posix()+r'}\caption{'+inline(image.group(1))+'}'+r'\end{figure}')
             i+=1;continue
         if re.match(r'^\d+\. ',line):
             out.append(r'\noindent '+inline(line)+r'\par\smallskip');i+=1;continue
@@ -85,7 +86,7 @@ def convert(source):
 PREAMBLE=r'''\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
 \usepackage[left=25mm,right=25mm,top=23mm,bottom=24mm]{geometry}
 \usepackage{amsmath,amssymb,bm,graphicx,booktabs,longtable,array}
-\usepackage{placeins,fancyhdr,xcolor,hyperref,microtype,needspace}
+\usepackage{placeins,float,fancyhdr,xcolor,hyperref,microtype,needspace}
 \definecolor{accent}{HTML}{194D68}
 \hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdftitle={循环MPT与CS8融合的BB码量子纠错解码技术报告},pdfauthor={钟路安}}
 \setlength{\parindent}{2em}\setlength{\parskip}{0.2em}

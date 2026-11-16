@@ -81,7 +81,7 @@ def css():
 
 def syndrome():
     fig,ax=canvas(11.0)
-    text(ax,9,10.55,'多轮测量：看“何时发生变化”，而不是对 syndrome 做多数投票',12,weight='bold')
+    text(ax,9,10.55,'多轮测量：从相邻读出的差分提取检测事件',12,weight='bold')
     text(ax,9,9.85,r'$d_t=m_t\oplus m_{t-1}$'+'：相邻读出的差分就是检测事件',11)
     xs=np.linspace(6.7,16.6,7)
     for x,t in zip(xs,range(7)):text(ax,x,9.1,r'$t='+str(t)+'$',10,weight='bold')
