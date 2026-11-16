@@ -1,0 +1,27 @@
+{
+  "source_last_sha256": "da9f10fc10b8803821c4126aa9daedd78aed25b762297bcb8bfefbdbf4b5646b",
+  "source_best_sha256": "96c973c9daf38c4f3da62492f4e3711d0cffccf8c6f141c7b0640200cb42fb2c",
+  "config": {
+    "command": "train",
+    "code": "bb144",
+    "device": "cuda",
+    "samples": 6000000,
+    "initialize": null,
+    "output": "F:\\pythoncode\\temp\\ai for qec\\bb_recurrent_graph\\bb144_noaux_6m",
+    "seed": 21801259,
+    "lr": 0.0003,
+    "schedule": "two_stage",
+    "batch": 64,
+    "validation_shots": 1024,
+    "eval_every": 100000,
+    "plateau_patience": 0,
+    "plateau_min_samples": 2000000,
+    "plateau_relative": 0.002
+  },
+  "additional_samples": 2000000,
+  "resume": "Full weights/EMA/AdamW/RNG; same independent validation; unchanged learning rate 1e-5",
+  "selection": "Minimum original independent validation mean normalized fault BCE; keep 4M best if no improvement",
+  "stop": "Exactly 6M total, no plateau early stop",
+  "test_seed": 22001116,
+  "test": "New paired 16000 frames after selection; historical auxiliary, noaux1M, noaux4M, noaux selected through6M, SPA+CS8"
+}

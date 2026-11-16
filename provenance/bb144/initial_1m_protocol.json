@@ -1,0 +1,30 @@
+{
+  "codes": [
+    "bb72",
+    "bb90",
+    "bb144"
+  ],
+  "base_seed": 21801115,
+  "budget_per_code": 1000000,
+  "initialization": "from scratch for all codes",
+  "loss": "fault BCE / (batch * expected fault count), NO auxiliary logical loss",
+  "architecture": "ungated recurrent CrossMPT,2layers4heads64dim,13frames",
+  "training_seed": "base_seed+code_length",
+  "test_counts": {
+    "0.003": 1000,
+    "0.004": 1000,
+    "0.005": 5000,
+    "0.006": 1000
+  },
+  "test_seed": "base_seed+900000+code_length*10000+round(p*1e6)",
+  "validation_shots_per_noise": 1024,
+  "selection": "minimum independent validation fault BCE",
+  "CS8": {
+    "basis": "syndrome",
+    "sweep": 8,
+    "score": "prior",
+    "shortcuts": false
+  },
+  "BP": "parallel minimum_sum scaling0 and product_sum,200 iterations",
+  "release": "F:\\pythoncode\\temp\\recurrent-mpt-qec-pure-bce"
+}

@@ -22,7 +22,7 @@
   "output_detectors": 468,
   "fault_variables": 4392,
   "rank_H": 462,
-  "parameters": 210850,
+  "parameters": 189089,
   "circuit": {
     "noisy_rounds": 12,
     "frames": 13,
@@ -33,5 +33,8 @@
     "source_sha256": "c0fae26b370f2e71a4e4bb180f541b0377f3343dc07df8be626eb66d019e7d37",
     "logical_sha256": "e05a1504fe16bbf9ff9870e778b192db575b8640aa9e8910314ce60764a37409",
     "alignment": "calls unchanged author Code.create_syndrome_measurement_circuit and gate helpers; official A/B ordering and saved logical X operators"
-  }
+  },
+  "training_loss": "fault_BCE_only",
+  "initialization": "from scratch",
+  "training_samples": 1000000
 }

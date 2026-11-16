@@ -1,0 +1,26 @@
+{
+  "code": "bb144",
+  "source_last_sha256": "999dde69308d0907d60f71a5d173f5bd99bdc1ac9489a5c200bfb97ed7892369",
+  "source_final_sha256": "5d666f751ae345d29e55a661f5aa866b786164872afb488560b854d2247d3593",
+  "continuation": "full model, EMA, AdamW state, CPU/CUDA RNG, online fault/noise RNG; original fixed validation regenerated with original seed",
+  "config": {
+    "command": "train",
+    "code": "bb144",
+    "device": "cuda",
+    "samples": 4000000,
+    "initialize": null,
+    "output": "F:\\pythoncode\\temp\\ai for qec\\bb_recurrent_graph\\bb144_noaux_continuation",
+    "seed": 21801259,
+    "lr": 0.0003,
+    "schedule": "two_stage",
+    "batch": 64,
+    "validation_shots": 1024,
+    "eval_every": 100000,
+    "plateau_patience": 5,
+    "plateau_min_samples": 2000000,
+    "plateau_relative": 0.002
+  },
+  "stop": "At least 2M total samples; practical plateau if the last five 100k checks improve best normalized validation BCE by less than 0.2%; cap4M. Cap is not proof of convergence.",
+  "test": "Only after selection: new seed, p=.005 10000 frames, other p 2000 each; all three frozen checkpoints and SPA share CS8.",
+  "causal_limit": "Historical auxiliary and scratch noaux have different histories. Even plateau does not alone isolate head causality."
+}

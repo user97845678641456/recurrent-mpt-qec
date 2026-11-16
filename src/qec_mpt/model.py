@@ -26,12 +26,8 @@ def official_core(H):
 class RecurrentMPT(nn.Module):
     def __init__(self,dat):
         super().__init__();b=dat['b'];self.n=b.Hx.shape[1];self.d=64;self.rounds=12
-        self.register_buffer('support',torch.tensor(b.Lx,dtype=torch.float32))
         self.node=nn.Parameter(torch.randn(1,2*self.n,64)*.02)
         self.embed=nn.Sequential(nn.Linear(4,64),nn.GELU(),nn.Linear(64,64))
-        self.query=nn.Parameter(torch.randn(1,len(b.Lx),64)*.02)
-        self.read=nn.MultiheadAttention(64,4,batch_first=True);self.qnorm=nn.LayerNorm(64)
-        self.head=nn.Sequential(nn.Linear(64,64),nn.GELU(),nn.Linear(64,1))
         core=official_core(np.vstack((b.Hz,b.Hx)));self.encoder=core.decoder
         self.register_buffer('mask_vn',core.src_mask_VN);self.register_buffer('mask_cn',core.src_mask_CN)
         h=dat['h'].tocoo();extended=sp.coo_matrix((h.data,(dat['rows'][h.row],h.col)),shape=(13*self.n,h.shape[1])).tocsc()
@@ -58,25 +54,29 @@ class RecurrentMPT(nn.Module):
         for t in range(13):
             v=(v+self.node[:,:self.n]+ev)/math.sqrt(2);c=(c+self.embed(x[:,t])+self.node[:,self.n:]+ec)/math.sqrt(2)
             v,c=checkpoint(encode,v,c,use_reentrant=False) if self.training else encode(v,c);frames.append(c)
-        q=self.query+(self.support@v)/self.support.sum(1)[None,:,None];mem=torch.cat((v,c),1);q=q+self.read(q,mem,mem,need_weights=False)[0]
-        logical=self.head(self.qnorm(q)).squeeze(-1);local=self.local(torch.cat(frames,1))
+        local=self.local(torch.cat(frames,1))
         with torch.autocast('cuda',enabled=False):
             loc=torch.sparse.mm(self.incidence,local.float().permute(1,0,2).reshape(-1,bs*16)).reshape(len(self.prior),bs,16).permute(1,0,2)
             active=torch.sparse.mm(self.raw_incidence,x[...,1].flatten(1,2).float().T).T.unsqueeze(-1)
         glob=self.global_proj(torch.cat((v.mean(1),c.mean(1)),-1))[:,None].expand(-1,len(self.prior),-1)
         feat=torch.cat((loc,glob,self.fault_id[None].expand(bs,-1,-1),active,prior[None,:,None].expand(bs,-1,-1)/10),-1)
-        return prior+self.fault_head(feat).squeeze(-1),logical
+        return prior+self.fault_head(feat).squeeze(-1)
+
+
+def fault_parameters(parameters):
+    """Drop only known historical auxiliary-head keys; strict loading follows."""
+    return {k:v for k,v in parameters.items() if k not in ('support','query') and not k.startswith(('read.','qnorm.','head.'))}
 
 def load_model(code,device='cpu',checkpoint_path=None):
     model=RecurrentMPT(matrices(code)).to(device)
     state=torch.load(checkpoint_path or ROOT/'checkpoints'/f'{code}.pt',map_location=device,weights_only=True)
-    model.load_state_dict(state['parameters']);return model.eval()
+    model.load_state_dict(fault_parameters(state['parameters']));return model.eval()
 
 @torch.inference_mode()
 def infer(code,p,detectors,device='cpu',checkpoint_path=None,batch=64):
     model=load_model(code,device,checkpoint_path);q=matrices(code,p)['q'];prior=torch.tensor(np.log(q/(1-q)),device=device,dtype=torch.float32);out=[]
     for i in range(0,len(detectors),batch):
         x=gpu_features(torch.tensor(detectors[i:i+batch],device=device),12,model.n)
-        with torch.autocast('cuda',dtype=torch.bfloat16,enabled=str(device).startswith('cuda')):z,_=model(x,prior,p)
+        with torch.autocast('cuda',dtype=torch.bfloat16,enabled=str(device).startswith('cuda')):z=model(x,prior,p)
         out.append(z.float().cpu().numpy())
     return np.concatenate(out)

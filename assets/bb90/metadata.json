@@ -22,11 +22,14 @@
   "output_detectors": 585,
   "fault_variables": 5490,
   "rank_H": 581,
-  "parameters": 230466,
+  "parameters": 208961,
   "circuit": {
     "basis": "author X-memory",
     "rounds": 12,
     "schedule": "unchanged author Code methods generalized to BB90",
     "logicals": "qldpc independently computed and CSS-validated"
-  }
+  },
+  "training_loss": "fault_BCE_only",
+  "initialization": "from scratch",
+  "training_samples": 1000000
 }

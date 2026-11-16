@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "recurrent-mpt-qec"
-version = "0.1.0"
+version = "0.2.0"
 description = "Recurrent CrossMPT soft information with CS8 for BB quantum memory experiments"
 requires-python = ">=3.11"
 dependencies = ["numpy", "scipy", "torch", "stim", "ldpc", "numba", "matplotlib"]

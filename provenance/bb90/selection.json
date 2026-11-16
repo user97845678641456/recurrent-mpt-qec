@@ -1,8 +1,16 @@
 {
-  "extra_samples": 900000,
-  "selection_score": 1.8007028002536214,
-  "selection": "minimum independent validation normalized BCE",
-  "training_extra_samples_executed": 900000,
-  "stopping_reason": "resource_cap",
-  "plateau_established": false
+  "samples": 1000000,
+  "validation": {
+    "0.003": 1.2561087850154304,
+    "0.004": 1.643719630395861,
+    "0.005": 1.9186442586436971,
+    "0.006": 2.300388259979291
+  },
+  "selection": "minimum independent validation mean BCE",
+  "training_loss": "fault_BCE_only",
+  "initialization": null,
+  "code": "bb90",
+  "seed": 21801205,
+  "training_samples_executed": 1000000,
+  "schedule": "two_stage"
 }

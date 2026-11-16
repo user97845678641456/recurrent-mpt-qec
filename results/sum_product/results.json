@@ -4,405 +4,568 @@
     "p": 0.003,
     "shots": 1000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 44,
-        "error_rate": 0.044,
+      "MPT_CS8": {
+        "failures": 34,
+        "error_rate": 0.034,
         "ci95": [
-          0.03293821458841875,
-          0.05855178915040732
-        ]
+          0.024431348663226528,
+          0.04713519024531065
+        ],
+        "fault_BER": 0.0016227231329690346,
+        "fixed_mean_errors": {
+          "32": 1.952,
+          "128": 0.472,
+          "512": 0.055,
+          "930": 0.022
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 37,
-        "error_rate": 0.037,
+        "failures": 47,
+        "error_rate": 0.047,
         "ci95": [
-          0.02696118087555497,
-          0.05058239748206888
-        ]
+          0.035527105106384765,
+          0.06193993808152798
+        ],
+        "fault_BER": 0.0010387067395264116,
+        "fixed_mean_errors": {
+          "32": 2.639,
+          "128": 1.928,
+          "512": 1.398,
+          "930": 1.168
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 25,
-        "error_rate": 0.025,
+      "SPA_CS8": {
+        "failures": 48,
+        "error_rate": 0.048,
         "ci95": [
-          0.016990131293434248,
-          0.036645289267842926
-        ]
+          0.03639330102080819,
+          0.06306608865013345
+        ],
+        "fault_BER": 0.0010362021857923498,
+        "fixed_mean_errors": {
+          "32": 2.394,
+          "128": 1.723,
+          "512": 1.315,
+          "930": 1.109
+        },
+        "nan_count": 0,
+        "inf_count": 739259
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.019,
+      "MS_CS8": {
+        "success_gain": 0.013,
         "ci95": [
-          0.007458666247578455,
-          0.030541333752421546
+          0.001763905508611125,
+          0.024236094491388874
         ],
-        "MPT_only_success": 27,
-        "baseline_only_success": 8
+        "MPT_only_success": 23,
+        "baseline_only_success": 10
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.012,
+      "SPA_CS8": {
+        "success_gain": 0.014,
         "ci95": [
-          0.002422059378627023,
-          0.021577940621372978
+          0.002598621230840637,
+          0.025401378769159363
         ],
-        "MPT_only_success": 18,
-        "baseline_only_success": 6
+        "MPT_only_success": 24,
+        "baseline_only_success": 10
       }
-    },
-    "pure_SPA_error_rate": 0.194,
-    "SPA_syndrome_valid_rate": 0.813,
-    "mean_iterations": 49.939,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 745284
+    }
   },
   {
     "code": "bb72",
     "p": 0.004,
     "shots": 1000,
     "arms": {
+      "MPT_CS8": {
+        "failures": 112,
+        "error_rate": 0.112,
+        "ci95": [
+          0.09391954090888155,
+          0.1330500236759091
+        ],
+        "fault_BER": 0.0027848360655737705,
+        "fixed_mean_errors": {
+          "32": 4.771,
+          "128": 1.41,
+          "512": 0.287,
+          "930": 0.111
+        },
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "MS_CS8": {
+        "failures": 127,
+        "error_rate": 0.127,
+        "ci95": [
+          0.10778000925843896,
+          0.149074752571785
+        ],
+        "fault_BER": 0.0017971311475409835,
+        "fixed_mean_errors": {
+          "32": 4.954,
+          "128": 3.615,
+          "512": 2.656,
+          "930": 2.254
+        },
+        "nan_count": 0,
+        "inf_count": 0
+      },
       "SPA_CS8": {
         "failures": 129,
         "error_rate": 0.129,
         "ci95": [
           0.10963544529450556,
           0.15120400950177623
-        ]
-      },
-      "MS_CS8": {
-        "failures": 138,
-        "error_rate": 0.138,
-        "ci95": [
-          0.11800457326997485,
-          0.16076599987356696
-        ]
-      },
-      "MPT_CS8": {
-        "failures": 95,
-        "error_rate": 0.095,
-        "ci95": [
-          0.07834523457904785,
-          0.11475443979425165
-        ]
+        ],
+        "fault_BER": 0.0017718579234972678,
+        "fixed_mean_errors": {
+          "32": 4.63,
+          "128": 3.438,
+          "512": 2.484,
+          "930": 2.138
+        },
+        "nan_count": 0,
+        "inf_count": 708783
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.034,
+      "MS_CS8": {
+        "success_gain": 0.015,
         "ci95": [
-          0.015309477106136223,
-          0.05269052289386378
+          -0.0028411531787254918,
+          0.03284115317872549
         ],
-        "MPT_only_success": 63,
-        "baseline_only_success": 29
+        "MPT_only_success": 49,
+        "baseline_only_success": 34
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.043,
+      "SPA_CS8": {
+        "success_gain": 0.017,
         "ci95": [
-          0.024904599337811688,
-          0.061095400662188305
+          -0.0014697945551895818,
+          0.03546979455518959
         ],
-        "MPT_only_success": 65,
-        "baseline_only_success": 22
+        "MPT_only_success": 53,
+        "baseline_only_success": 36
       }
-    },
-    "pure_SPA_error_rate": 0.378,
-    "SPA_syndrome_valid_rate": 0.644,
-    "mean_iterations": 85.235,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 671160
+    }
   },
   {
     "code": "bb72",
     "p": 0.005,
-    "shots": 3000,
+    "shots": 5000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 888,
-        "error_rate": 0.296,
+      "MPT_CS8": {
+        "failures": 1209,
+        "error_rate": 0.2418,
         "ci95": [
-          0.27993422982313665,
-          0.31258754045679615
-        ]
+          0.23013296852236045,
+          0.253863472762067
+        ],
+        "fault_BER": 0.004206466302367941,
+        "fixed_mean_errors": {
+          "32": 9.0556,
+          "128": 3.041,
+          "512": 0.6198,
+          "930": 0.243
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 938,
-        "error_rate": 0.31266666666666665,
+        "failures": 1530,
+        "error_rate": 0.306,
         "ci95": [
-          0.29632643239652473,
-          0.3294860429258973
-        ]
+          0.29337965709328956,
+          0.3189182112613926
+        ],
+        "fault_BER": 0.00325591985428051,
+        "fixed_mean_errors": {
+          "32": 9.5906,
+          "128": 6.5552,
+          "512": 4.4274,
+          "930": 3.7056
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 719,
-        "error_rate": 0.23966666666666667,
+      "SPA_CS8": {
+        "failures": 1417,
+        "error_rate": 0.2834,
         "ci95": [
-          0.2247303094617961,
-          0.25526887777452356
-        ]
+          0.2710788517570881,
+          0.2960537167255105
+        ],
+        "fault_BER": 0.002876183970856102,
+        "fixed_mean_errors": {
+          "32": 8.0002,
+          "128": 5.6182,
+          "512": 3.923,
+          "930": 3.356
+        },
+        "nan_count": 0,
+        "inf_count": 2488665
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.05633333333333333,
+      "MS_CS8": {
+        "success_gain": 0.0642,
         "ci95": [
-          0.04118418455786109,
-          0.07148248210880558
+          0.05272729699948492,
+          0.07567270300051507
         ],
-        "MPT_only_success": 358,
-        "baseline_only_success": 189
+        "MPT_only_success": 599,
+        "baseline_only_success": 278
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.073,
+      "SPA_CS8": {
+        "success_gain": 0.0416,
         "ci95": [
-          0.05811337223524033,
-          0.08788662776475967
+          0.030323523958115963,
+          0.05287647604188403
         ],
-        "MPT_only_success": 377,
-        "baseline_only_success": 158
+        "MPT_only_success": 522,
+        "baseline_only_success": 314
       }
-    },
-    "pure_SPA_error_rate": 0.6146666666666667,
-    "SPA_syndrome_valid_rate": 0.41133333333333333,
-    "mean_iterations": 128.18233333333333,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 1434524
+    }
   },
   {
     "code": "bb72",
     "p": 0.006,
     "shots": 1000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 489,
-        "error_rate": 0.489,
+      "MPT_CS8": {
+        "failures": 468,
+        "error_rate": 0.468,
         "ci95": [
-          0.45811915212327226,
-          0.51996503656341
-        ]
+          0.4372552241922282,
+          0.49898968835084734
+        ],
+        "fault_BER": 0.005911429872495446,
+        "fixed_mean_errors": {
+          "32": 15.093,
+          "128": 6.15,
+          "512": 1.494,
+          "930": 0.607
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 527,
-        "error_rate": 0.527,
+        "failures": 552,
+        "error_rate": 0.552,
         "ci95": [
-          0.49601123450986223,
-          0.5577821205319179
-        ]
+          0.5210376917018601,
+          0.5825643254156422
+        ],
+        "fault_BER": 0.00560655737704918,
+        "fixed_mean_errors": {
+          "32": 17.606,
+          "128": 11.582,
+          "512": 6.928,
+          "930": 5.404
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 439,
-        "error_rate": 0.439,
+      "SPA_CS8": {
+        "failures": 514,
+        "error_rate": 0.514,
         "ci95": [
-          0.40853319214335365,
-          0.46993367239188405
-        ]
+          0.48302810642681315,
+          0.5448647443355914
+        ],
+        "fault_BER": 0.004417805100182149,
+        "fixed_mean_errors": {
+          "32": 13.045,
+          "128": 8.891,
+          "512": 5.687,
+          "930": 4.692
+        },
+        "nan_count": 0,
+        "inf_count": 227589
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.05,
+      "MS_CS8": {
+        "success_gain": 0.084,
         "ci95": [
-          0.020552624090626553,
-          0.07944737590937345
+          0.055654228654821315,
+          0.1123457713451787
         ],
-        "MPT_only_success": 139,
-        "baseline_only_success": 89
+        "MPT_only_success": 150,
+        "baseline_only_success": 66
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.088,
+      "SPA_CS8": {
+        "success_gain": 0.046,
         "ci95": [
-          0.05902947116221138,
-          0.1169705288377886
+          0.017590539042919663,
+          0.07440946095708034
         ],
-        "MPT_only_success": 157,
-        "baseline_only_success": 69
+        "MPT_only_success": 129,
+        "baseline_only_success": 83
       }
-    },
-    "pure_SPA_error_rate": 0.798,
-    "SPA_syndrome_valid_rate": 0.226,
-    "mean_iterations": 161.238,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 316118
+    }
   },
   {
     "code": "bb90",
     "p": 0.003,
     "shots": 1000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 10,
-        "error_rate": 0.01,
-        "ci95": [
-          0.005440754445529338,
-          0.01830946887031448
-        ]
-      },
-      "MS_CS8": {
-        "failures": 11,
-        "error_rate": 0.011,
-        "ci95": [
-          0.006153174098086734,
-          0.019589395700785973
-        ]
-      },
       "MPT_CS8": {
         "failures": 2,
         "error_rate": 0.002,
         "ci95": [
           0.0005486435881207445,
           0.00726280786349195
-        ]
+        ],
+        "fault_BER": 0.0015728597449908926,
+        "fixed_mean_errors": {
+          "32": 2.646,
+          "128": 0.641,
+          "512": 0.12,
+          "930": 0.033
+        },
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "MS_CS8": {
+        "failures": 13,
+        "error_rate": 0.013,
+        "ci95": [
+          0.007612820389351135,
+          0.022114442375579354
+        ],
+        "fault_BER": 0.0009307832422586521,
+        "fixed_mean_errors": {
+          "32": 3.214,
+          "128": 2.511,
+          "512": 1.976,
+          "930": 1.72
+        },
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "SPA_CS8": {
+        "failures": 13,
+        "error_rate": 0.013,
+        "ci95": [
+          0.007612820389351135,
+          0.022114442375579354
+        ],
+        "fault_BER": 0.0009564663023679417,
+        "fixed_mean_errors": {
+          "32": 3.112,
+          "128": 2.46,
+          "512": 1.962,
+          "930": 1.717
+        },
+        "nan_count": 0,
+        "inf_count": 1093013
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.008,
+      "MS_CS8": {
+        "success_gain": 0.011,
         "ci95": [
-          0.0012251024482405034,
-          0.014774897551759498
+          0.003435848839242912,
+          0.018564151160757086
         ],
-        "MPT_only_success": 10,
+        "MPT_only_success": 13,
         "baseline_only_success": 2
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.009,
+      "SPA_CS8": {
+        "success_gain": 0.011,
         "ci95": [
-          0.0025201528707215004,
-          0.015479847129278499
+          0.003435848839242912,
+          0.018564151160757086
         ],
-        "MPT_only_success": 10,
-        "baseline_only_success": 1
+        "MPT_only_success": 13,
+        "baseline_only_success": 2
       }
-    },
-    "pure_SPA_error_rate": 0.191,
-    "SPA_syndrome_valid_rate": 0.809,
-    "mean_iterations": 52.909,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 1050753
+    }
   },
   {
     "code": "bb90",
     "p": 0.004,
     "shots": 1000,
     "arms": {
-      "SPA_CS8": {
+      "MPT_CS8": {
+        "failures": 25,
+        "error_rate": 0.025,
+        "ci95": [
+          0.016990131293434248,
+          0.036645289267842926
+        ],
+        "fault_BER": 0.002722586520947177,
+        "fixed_mean_errors": {
+          "32": 6.657,
+          "128": 1.988,
+          "512": 0.418,
+          "930": 0.156
+        },
+        "nan_count": 0,
+        "inf_count": 0
+      },
+      "MS_CS8": {
         "failures": 51,
         "error_rate": 0.051,
         "ci95": [
           0.039000942775267125,
           0.06643548634476118
-        ]
+        ],
+        "fault_BER": 0.0017382513661202187,
+        "fixed_mean_errors": {
+          "32": 6.352,
+          "128": 4.814,
+          "512": 3.755,
+          "930": 3.268
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MS_CS8": {
-        "failures": 45,
-        "error_rate": 0.045,
+      "SPA_CS8": {
+        "failures": 44,
+        "error_rate": 0.044,
         "ci95": [
-          0.03379951228563198,
-          0.05968283793622299
-        ]
-      },
-      "MPT_CS8": {
-        "failures": 19,
-        "error_rate": 0.019,
-        "ci95": [
-          0.012196885750791052,
-          0.029484455912312774
-        ]
+          0.03293821458841875,
+          0.05855178915040732
+        ],
+        "fault_BER": 0.0016867030965391622,
+        "fixed_mean_errors": {
+          "32": 5.841,
+          "128": 4.49,
+          "512": 3.445,
+          "930": 3.042
+        },
+        "nan_count": 0,
+        "inf_count": 895612
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.032,
-        "ci95": [
-          0.017727077457019604,
-          0.0462729225429804
-        ],
-        "MPT_only_success": 43,
-        "baseline_only_success": 11
-      },
-      "MPT_vs_MS_CS8": {
+      "MS_CS8": {
         "success_gain": 0.026,
         "ci95": [
-          0.013394081247779374,
-          0.03860591875222062
+          0.013702915113869599,
+          0.0382970848861304
         ],
-        "MPT_only_success": 34,
-        "baseline_only_success": 8
+        "MPT_only_success": 33,
+        "baseline_only_success": 7
+      },
+      "SPA_CS8": {
+        "success_gain": 0.019,
+        "ci95": [
+          0.005898212364748112,
+          0.032101787635251885
+        ],
+        "MPT_only_success": 32,
+        "baseline_only_success": 13
       }
-    },
-    "pure_SPA_error_rate": 0.362,
-    "SPA_syndrome_valid_rate": 0.638,
-    "mean_iterations": 87.768,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 940090
+    }
   },
   {
     "code": "bb90",
     "p": 0.005,
-    "shots": 3000,
+    "shots": 5000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 475,
-        "error_rate": 0.15833333333333333,
+      "MPT_CS8": {
+        "failures": 576,
+        "error_rate": 0.1152,
         "ci95": [
-          0.14570829524894602,
-          0.17183225138002667
-        ]
+          0.10664451746396834,
+          0.12434630595294759
+        ],
+        "fault_BER": 0.004176867030965392,
+        "fixed_mean_errors": {
+          "32": 12.5764,
+          "128": 4.6418,
+          "512": 1.0496,
+          "930": 0.4408
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 554,
-        "error_rate": 0.18466666666666667,
+        "failures": 864,
+        "error_rate": 0.1728,
         "ci95": [
-          0.17118784335873458,
-          0.19895201723737096
-        ]
+          0.16257271240053325,
+          0.18352967175231213
+        ],
+        "fault_BER": 0.003142040072859745,
+        "fixed_mean_errors": {
+          "32": 11.9542,
+          "128": 8.4494,
+          "512": 5.9136,
+          "930": 5.0436
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 345,
-        "error_rate": 0.115,
+      "SPA_CS8": {
+        "failures": 776,
+        "error_rate": 0.1552,
         "ci95": [
-          0.10407319548539054,
-          0.1269115180331104
-        ]
+          0.1454284821092726,
+          0.16550092515203882
+        ],
+        "fault_BER": 0.0028062659380692166,
+        "fixed_mean_errors": {
+          "32": 10.3124,
+          "128": 7.4644,
+          "512": 5.3346,
+          "930": 4.6242
+        },
+        "nan_count": 0,
+        "inf_count": 3211504
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.043333333333333335,
+      "MS_CS8": {
+        "success_gain": 0.0576,
         "ci95": [
-          0.029777490520526407,
-          0.056889176146140266
+          0.04742651689004608,
+          0.06777348310995392
         ],
-        "MPT_only_success": 283,
-        "baseline_only_success": 153
+        "MPT_only_success": 489,
+        "baseline_only_success": 201
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.06966666666666667,
+      "SPA_CS8": {
+        "success_gain": 0.04,
         "ci95": [
-          0.05604682850707531,
-          0.08328650482625802
+          0.029746844317953228,
+          0.050253155682046774
         ],
-        "MPT_only_success": 329,
-        "baseline_only_success": 120
+        "MPT_only_success": 446,
+        "baseline_only_success": 246
       }
-    },
-    "pure_SPA_error_rate": 0.6356666666666667,
-    "SPA_syndrome_valid_rate": 0.36466666666666664,
-    "mean_iterations": 138.56333333333333,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 1999191
+    }
   },
   {
     "code": "bb90",
     "p": 0.006,
     "shots": 1000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 314,
-        "error_rate": 0.314,
+      "MPT_CS8": {
+        "failures": 291,
+        "error_rate": 0.291,
         "ci95": [
-          0.28599234617462566,
-          0.3434312079820008
-        ]
+          0.2636897827038131,
+          0.31990980234314875
+        ],
+        "fault_BER": 0.0057100182149362475,
+        "fixed_mean_errors": {
+          "32": 19.824,
+          "128": 8.717,
+          "512": 2.224,
+          "930": 1.009
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
         "failures": 387,
@@ -410,265 +573,366 @@
         "ci95": [
           0.3572991740907023,
           0.41756567332703315
-        ]
+        ],
+        "fault_BER": 0.005148269581056466,
+        "fixed_mean_errors": {
+          "32": 20.541,
+          "128": 13.826,
+          "512": 8.352,
+          "930": 6.71
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 287,
-        "error_rate": 0.287,
+      "SPA_CS8": {
+        "failures": 328,
+        "error_rate": 0.328,
         "ci95": [
-          0.25981978203920064,
-          0.3158104170756457
-        ]
+          0.2996080384525811,
+          0.35770836646644977
+        ],
+        "fault_BER": 0.004188706739526412,
+        "fixed_mean_errors": {
+          "32": 15.85,
+          "128": 10.856,
+          "512": 6.814,
+          "930": 5.574
+        },
+        "nan_count": 0,
+        "inf_count": 333381
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.027,
+      "MS_CS8": {
+        "success_gain": 0.096,
         "ci95": [
-          -0.0015705538999535376,
-          0.05557055389995354
+          0.0679378243876192,
+          0.12406217561238081
         ],
-        "MPT_only_success": 120,
-        "baseline_only_success": 93
+        "MPT_only_success": 155,
+        "baseline_only_success": 59
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.1,
+      "SPA_CS8": {
+        "success_gain": 0.037,
         "ci95": [
-          0.07158268936821179,
-          0.1284173106317882
+          0.007284120691403342,
+          0.06671587930859665
         ],
-        "MPT_only_success": 160,
-        "baseline_only_success": 60
+        "MPT_only_success": 134,
+        "baseline_only_success": 97
       }
-    },
-    "pure_SPA_error_rate": 0.82,
-    "SPA_syndrome_valid_rate": 0.18,
-    "mean_iterations": 170.717,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 320029
+    }
   },
   {
     "code": "bb144",
     "p": 0.003,
-    "shots": 1000,
+    "shots": 2000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 6,
-        "error_rate": 0.006,
+      "MPT_CS8": {
+        "failures": 3,
+        "error_rate": 0.0015,
         "ci95": [
-          0.002752669141876431,
-          0.013028168241851826
-        ]
+          0.0005102635836384953,
+          0.0044010325557705746
+        ],
+        "fault_BER": 0.0013660063752276867,
+        "fixed_mean_errors": {
+          "32": 4.7285,
+          "128": 1.2375,
+          "512": 0.2355,
+          "930": 0.106
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 5,
-        "error_rate": 0.005,
+        "failures": 7,
+        "error_rate": 0.0035,
         "ci95": [
-          0.0021375355273245064,
-          0.011650955373374858
-        ]
+          0.0016964316970424502,
+          0.007207196253241609
+        ],
+        "fault_BER": 0.0009002732240437158,
+        "fixed_mean_errors": {
+          "32": 5.643,
+          "128": 4.885,
+          "512": 4.197,
+          "930": 3.8065
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 2,
-        "error_rate": 0.002,
+      "SPA_CS8": {
+        "failures": 7,
+        "error_rate": 0.0035,
         "ci95": [
-          0.0005486435881207445,
-          0.00726280786349195
-        ]
+          0.0016964316970424502,
+          0.007207196253241609
+        ],
+        "fault_BER": 0.0009367600182149362,
+        "fixed_mean_errors": {
+          "32": 5.5865,
+          "128": 4.6975,
+          "512": 4.0455,
+          "930": 3.708
+        },
+        "nan_count": 0,
+        "inf_count": 7100122
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.004,
+      "MS_CS8": {
+        "success_gain": 0.002,
         "ci95": [
-          -0.0015409418365866685,
-          0.009540941836586669
+          -0.0007711651842210922,
+          0.004771165184221092
         ],
         "MPT_only_success": 6,
         "baseline_only_success": 2
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.003,
+      "SPA_CS8": {
+        "success_gain": 0.002,
         "ci95": [
-          -0.0021849309647389813,
-          0.008184930964738981
+          -0.0007711651842210914,
+          0.0047711651842210915
         ],
-        "MPT_only_success": 5,
+        "MPT_only_success": 6,
         "baseline_only_success": 2
       }
-    },
-    "pure_SPA_error_rate": 0.247,
-    "SPA_syndrome_valid_rate": 0.753,
-    "mean_iterations": 69.255,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 3760318
+    }
   },
   {
     "code": "bb144",
     "p": 0.004,
-    "shots": 1000,
+    "shots": 2000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 37,
-        "error_rate": 0.037,
+      "MPT_CS8": {
+        "failures": 24,
+        "error_rate": 0.012,
         "ci95": [
-          0.02696118087555497,
-          0.05058239748206888
-        ]
+          0.008077154276022723,
+          0.01779388387048004
+        ],
+        "fault_BER": 0.002439606102003643,
+        "fixed_mean_errors": {
+          "32": 11.554,
+          "128": 4.025,
+          "512": 0.9055,
+          "930": 0.4175
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 24,
-        "error_rate": 0.024,
+        "failures": 51,
+        "error_rate": 0.0255,
         "ci95": [
-          0.016180168466637168,
-          0.03546290561161111
-        ]
+          0.019447915824308826,
+          0.0333713620456001
+        ],
+        "fault_BER": 0.001589993169398907,
+        "fixed_mean_errors": {
+          "32": 10.5395,
+          "128": 8.786,
+          "512": 7.4045,
+          "930": 6.7025
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 17,
-        "error_rate": 0.017,
+      "SPA_CS8": {
+        "failures": 43,
+        "error_rate": 0.0215,
         "ci95": [
-          0.010640689856816463,
-          0.02705595884022959
-        ]
+          0.016000780509074778,
+          0.028833833739084175
+        ],
+        "fault_BER": 0.0016109972677595629,
+        "fixed_mean_errors": {
+          "32": 10.297,
+          "128": 8.439,
+          "512": 7.053,
+          "930": 6.448
+        },
+        "nan_count": 0,
+        "inf_count": 6190580
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.02,
+      "MS_CS8": {
+        "success_gain": 0.0135,
         "ci95": [
-          0.00797549382516069,
-          0.03202450617483931
+          0.006663853377060643,
+          0.020336146622939356
         ],
-        "MPT_only_success": 29,
-        "baseline_only_success": 9
+        "MPT_only_success": 38,
+        "baseline_only_success": 11
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.007,
+      "SPA_CS8": {
+        "success_gain": 0.0095,
         "ci95": [
-          -0.004593194717754192,
-          0.018593194717754193
+          0.00251204868850921,
+          0.01648795131149079
         ],
-        "MPT_only_success": 21,
-        "baseline_only_success": 14
+        "MPT_only_success": 35,
+        "baseline_only_success": 16
       }
-    },
-    "pure_SPA_error_rate": 0.471,
-    "SPA_syndrome_valid_rate": 0.529,
-    "mean_iterations": 112.876,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 3238983
+    }
   },
   {
     "code": "bb144",
     "p": 0.005,
-    "shots": 3000,
+    "shots": 10000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 339,
-        "error_rate": 0.113,
+      "MPT_CS8": {
+        "failures": 833,
+        "error_rate": 0.0833,
         "ci95": [
-          0.10216242898759104,
-          0.12482739992581121
-        ]
+          0.07804261923315432,
+          0.08887740500896753
+        ],
+        "fault_BER": 0.0038557718579234975,
+        "fixed_mean_errors": {
+          "32": 22.1109,
+          "128": 9.3763,
+          "512": 2.3494,
+          "930": 1.1143
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 371,
-        "error_rate": 0.12366666666666666,
+        "failures": 1229,
+        "error_rate": 0.1229,
         "ci95": [
-          0.11236555571112011,
-          0.13593032442947514
-        ]
+          0.11660941149761048,
+          0.12948020007355376
+        ],
+        "fault_BER": 0.0028820355191256832,
+        "fixed_mean_errors": {
+          "32": 19.3578,
+          "128": 14.8047,
+          "512": 11.3196,
+          "930": 10.052
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 233,
-        "error_rate": 0.07766666666666666,
+      "SPA_CS8": {
+        "failures": 1165,
+        "error_rate": 0.1165,
         "ci95": [
-          0.06862024174778891,
-          0.08779329247553633
-        ]
+          0.11035872023710828,
+          0.12293580651320064
+        ],
+        "fault_BER": 0.002676502732240437,
+        "fixed_mean_errors": {
+          "32": 17.5226,
+          "128": 13.6553,
+          "512": 10.5223,
+          "930": 9.4129
+        },
+        "nan_count": 0,
+        "inf_count": 20120067
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.035333333333333335,
+      "MS_CS8": {
+        "success_gain": 0.0396,
         "ci95": [
-          0.023069235994999066,
-          0.04759743067166761
+          0.03305104767676133,
+          0.04614895232323868
         ],
-        "MPT_only_success": 231,
-        "baseline_only_success": 125
+        "MPT_only_success": 764,
+        "baseline_only_success": 368
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.046,
+      "SPA_CS8": {
+        "success_gain": 0.0332,
         "ci95": [
-          0.034099957253801876,
-          0.05790004274619812
+          0.026567514910122547,
+          0.039832485089877454
         ],
-        "MPT_only_success": 238,
-        "baseline_only_success": 100
+        "MPT_only_success": 744,
+        "baseline_only_success": 412
       }
-    },
-    "pure_SPA_error_rate": 0.703,
-    "SPA_syndrome_valid_rate": 0.297,
-    "mean_iterations": 153.59966666666668,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 5943550
+    }
   },
   {
     "code": "bb144",
     "p": 0.006,
-    "shots": 1000,
+    "shots": 2000,
     "arms": {
-      "SPA_CS8": {
-        "failures": 334,
-        "error_rate": 0.334,
+      "MPT_CS8": {
+        "failures": 583,
+        "error_rate": 0.2915,
         "ci95": [
-          0.3054523188740049,
-          0.3638181649431993
-        ]
+          0.27199786461366826,
+          0.31180154410261407
+        ],
+        "fault_BER": 0.005463000910746812,
+        "fixed_mean_errors": {
+          "32": 35.1365,
+          "128": 17.862,
+          "512": 5.153,
+          "930": 2.5225
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
       "MS_CS8": {
-        "failures": 390,
-        "error_rate": 0.39,
+        "failures": 758,
+        "error_rate": 0.379,
         "ci95": [
-          0.36024540636962965,
-          0.42059648049719245
-        ]
+          0.3579893607671199,
+          0.4004745646749433
+        ],
+        "fault_BER": 0.005136555100182149,
+        "fixed_mean_errors": {
+          "32": 35.6075,
+          "128": 25.225,
+          "512": 16.1495,
+          "930": 13.244
+        },
+        "nan_count": 0,
+        "inf_count": 0
       },
-      "MPT_CS8": {
-        "failures": 292,
-        "error_rate": 0.292,
+      "SPA_CS8": {
+        "failures": 648,
+        "error_rate": 0.324,
         "ci95": [
-          0.2646576946068605,
-          0.3209342369231303
-        ]
+          0.3038436646272434,
+          0.3448311360157576
+        ],
+        "fault_BER": 0.004213854735883424,
+        "fixed_mean_errors": {
+          "32": 28.413,
+          "128": 20.635,
+          "512": 13.869,
+          "930": 11.618
+        },
+        "nan_count": 0,
+        "inf_count": 1674593
       }
     },
     "paired": {
-      "MPT_vs_SPA_CS8": {
-        "success_gain": 0.042,
+      "MS_CS8": {
+        "success_gain": 0.0875,
         "ci95": [
-          0.011228469249894239,
-          0.07277153075010577
+          0.06621067655733692,
+          0.10878932344266307
         ],
-        "MPT_only_success": 145,
-        "baseline_only_success": 103
+        "MPT_only_success": 331,
+        "baseline_only_success": 156
       },
-      "MPT_vs_MS_CS8": {
-        "success_gain": 0.098,
+      "SPA_CS8": {
+        "success_gain": 0.0325,
         "ci95": [
-          0.06696962523981127,
-          0.12903037476018872
+          0.01122873797128748,
+          0.05377126202871252
         ],
-        "MPT_only_success": 179,
-        "baseline_only_success": 81
+        "MPT_only_success": 269,
+        "baseline_only_success": 204
       }
-    },
-    "pure_SPA_error_rate": 0.892,
-    "SPA_syndrome_valid_rate": 0.108,
-    "mean_iterations": 184.198,
-    "nan_LLR_count": 0,
-    "inf_LLR_count": 879339
+    }
   }
 ]

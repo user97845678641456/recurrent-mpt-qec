@@ -1,0 +1,20 @@
+{
+  "BB": {
+    "code": "bb72",
+    "matrix": "Hx",
+    "row": 0,
+    "qubit_indices": [
+      1,
+      2,
+      18,
+      39,
+      42,
+      48
+    ],
+    "row_weight": 6,
+    "Hx_HzT_zero": true
+  },
+  "CSS": "Conceptual physical Pauli representation; not DEM coordinates",
+  "syndrome": "Single-check conceptual traces, not sampled experimental data",
+  "model": "Matches 2-layer4-head d64 ungated recurrent MPT and prior-scored signed-order CS8"
+}

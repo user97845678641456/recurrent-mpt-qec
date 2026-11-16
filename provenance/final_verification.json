@@ -1,0 +1,98 @@
+[
+  {
+    "code": "bb72",
+    "p": 0.003,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb72",
+    "p": 0.004,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb72",
+    "p": 0.005,
+    "shots": 5000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb72",
+    "p": 0.006,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb90",
+    "p": 0.003,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb90",
+    "p": 0.004,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb90",
+    "p": 0.005,
+    "shots": 5000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb90",
+    "p": 0.006,
+    "shots": 1000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb144",
+    "p": 0.003,
+    "shots": 2000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb144",
+    "p": 0.004,
+    "shots": 2000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb144",
+    "p": 0.005,
+    "shots": 10000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  },
+  {
+    "code": "bb144",
+    "p": 0.006,
+    "shots": 2000,
+    "truth_mapping": true,
+    "all_result_counts_match": true,
+    "replayed_neural_CS8_frames": 8
+  }
+]

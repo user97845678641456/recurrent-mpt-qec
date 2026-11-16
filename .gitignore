@@ -5,6 +5,7 @@ __pycache__/
 .numba_cache/
 third_party/
 runs/
+tmp/
 *.log
 .env
 .env.*

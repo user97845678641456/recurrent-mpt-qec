@@ -1,8 +1,17 @@
 {
-  "extra_samples": 900000,
-  "selection_score": 1.6366134686305296,
-  "selection": "minimum independent validation normalized BCE",
-  "training_extra_samples_executed": 900000,
-  "stopping_reason": "resource_cap",
-  "plateau_established": false
+  "samples": 6000000,
+  "validation": {
+    "0.003": 1.0546030303109362,
+    "0.004": 1.443384155351794,
+    "0.005": 1.79149896734138,
+    "0.006": 2.1718524026268895
+  },
+  "selection": "minimum independent validation mean BCE",
+  "training_loss": "fault_BCE_only",
+  "initialization": null,
+  "code": "bb144",
+  "seed": 21801259,
+  "training_samples_executed": 6000000,
+  "schedule": "two_stage",
+  "stopping_reason": "sample_cap"
 }
