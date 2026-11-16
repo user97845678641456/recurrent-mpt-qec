@@ -293,6 +293,43 @@ BB144 & +3.32 & [+2.66,+3.98] & +28.5\% \\
 三个码在这一噪声点的配对区间均高于0，支持本次测试中循环MPT+CS8相对标准BP+CS8的性能改善。BB72、BB90、BB144的逻辑错误率相对降幅分别为14.7\%、25.8\%、28.5\%。
 
 
+\subsection{解码速度}
+
+速度实验在AMD Ryzen 9 9950X（16核、32线程）与NVIDIA RTX 5070平台上进行，噪声参数为p=0.005。MPT采用GPU BF16推理，BP采用CPU双精度sum-product更新；两者共用相同规模的CPU进程池执行独立码块解码及CS8。BP最多迭代200次，各码块独立停止。单块实验在主进程执行，批量实验扫描4、8、16、32个CPU工作进程。软件版本为PyTorch2.11.0（CUDA13.0）和LDPC2.4.1。
+
+
+所有模型、解码器和进程池均预先加载并预热。整批输入就绪后开始计时，到全部恢复向量返回主进程结束，包含特征处理、CPU/GPU传输、进程通信和CS8。单块延迟使用64个样本，批量测试使用512个样本，各重复3次，执行顺序交错随机化。
+
+
+单块解码的平均延迟如下：
+
+
+\begin{table}[H]\centering\small\setlength{\tabcolsep}{1.6mm}\renewcommand{\arraystretch}{1.25}\begin{tabular}{@{}>{\centering\arraybackslash}p{50.13mm}>{\centering\arraybackslash}p{50.13mm}>{\centering\arraybackslash}p{50.13mm}@{}}
+\toprule
+\textbf{码} & \textbf{BP+CS8 / ms} & \textbf{MPT+CS8 / ms} \\
+\midrule
+BB72 & 33.82 & 46.22 \\
+BB90 & 50.76 & 32.90 \\
+BB144 & 96.22 & 32.15 \\
+\bottomrule\end{tabular}\end{table}
+
+批大小为64、CPU进程池为32进程时，每个码块的均摊耗时（ms/块）如下。均摊值用于描述吞吐量；整批完成时间为该值的64倍。
+
+
+\begin{table}[H]\centering\small\setlength{\tabcolsep}{1.6mm}\renewcommand{\arraystretch}{1.25}\begin{tabular}{@{}>{\centering\arraybackslash}p{36.80mm}>{\centering\arraybackslash}p{36.80mm}>{\centering\arraybackslash}p{36.80mm}>{\centering\arraybackslash}p{36.80mm}@{}}
+\toprule
+\textbf{码} & \textbf{BP+CS8} & \textbf{MPT+CS8} & \textbf{吞吐量倍数} \\
+\midrule
+BB72 & 2.864 & 0.896 & 3.20 \\
+BB90 & 3.971 & 0.775 & 5.13 \\
+BB144 & 7.372 & 1.155 & 6.38 \\
+\bottomrule\end{tabular}\end{table}
+
+\begin{figure}[H]\centering\includegraphics[width=\linewidth]{parallel_throughput.pdf}\caption{批大小64时，不同CPU并行度下的完整解码吞吐量；MPT使用RTX 5070推理，两者共用同规格CPU进程池}\end{figure}
+
+本平台上，BB72的MPT单块延迟高于BP；批量处理则提高了MPT的吞吐量。在上述64块、32进程配置下，三种码的吞吐量分别达到BP的3.20、5.13、6.38倍，体现出批量GPU推理与并行后处理的性能收益。 批大小64时，两种实现的全部计时样本均通过校验约束检查，并与主评测保存的对应逻辑预测一致。完整批大小与CPU进程数扫描、逐批计时和输出记录随代码提供。
+
+
 \FloatBarrier\section{软信息分析与讨论}
 
 为分析模型提供的故障置信度，按各解码器的绝对LLR从小到大排序，取前C个位置作为不确定部分，统计其余高置信度位置的硬判决错误数。该分析用于观察预测错误是否集中在较低置信度位置，以及高置信度硬判决的可靠性。
@@ -324,6 +361,9 @@ BB144 & 2.35 & 11.32 & 10.52 \\
 
 
 软信息诊断进一步显示，模型在所分析的高置信度范围内具有更少的硬判决错误。这为性能收益提供了实验线索，也为改进概率估计与代数后处理的衔接提供了研究方向。
+
+
+在上述硬件与64块批量配置下，MPT+CS8的吞吐量达到32进程BP+CS8的3.20至6.38倍，体现出该实现的批量解码效率。
 
 
 \FloatBarrier\section*{参考文献与代码来源}

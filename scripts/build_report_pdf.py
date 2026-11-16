@@ -65,14 +65,15 @@ def convert(source):
             n=len(rows[0]);colwidth=f'{(160-3.2*n)/n:.2f}mm'
             columns='@{}'+''.join(r'>{\centering\arraybackslash}p{'+colwidth+'}' for _ in range(n))+'@{}'
             head=' & '.join(r'\textbf{'+inline(v)+'}' for v in rows[0])+r' \\'
-            out.append(r'\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{1.6mm}\renewcommand{\arraystretch}{1.25}\begin{tabular}{'+columns+'}\n'+r'\toprule'+'\n'+head+'\n'+r'\midrule'+'\n'+'\n'.join(' & '.join(inline(v) for v in row)+r' \\' for row in rows[1:])+'\n'+r'\bottomrule\end{tabular}\end{table}')
+            placement='H' if any('BP+CS8' in v for v in rows[0]) else 'htbp'
+            out.append(r'\begin{table}['+placement+r']\centering\small\setlength{\tabcolsep}{1.6mm}\renewcommand{\arraystretch}{1.25}\begin{tabular}{'+columns+'}\n'+r'\toprule'+'\n'+head+'\n'+r'\midrule'+'\n'+'\n'.join(' & '.join(inline(v) for v in row)+r' \\' for row in rows[1:])+'\n'+r'\bottomrule\end{tabular}\end{table}')
             continue
         image=re.fullmatch(r'!\[([^\]]*)\]\(([^)]+)\)',line)
         if image:
             # Use vector figures where available.
             path=REPORT/image.group(2);vector=path.with_suffix('.pdf')
             path=vector if vector.exists() else path
-            placement='H' if 'model_03_logits_head' in path.name else 'htbp'
+            placement='H' if any(v in path.name for v in ['model_03_logits_head','parallel_throughput']) else 'htbp'
             out.append(r'\begin{figure}['+placement+r']\centering\includegraphics[width=\linewidth]{'+path.relative_to(REPORT).as_posix()+r'}\caption{'+inline(image.group(1))+'}'+r'\end{figure}')
             i+=1;continue
         if re.match(r'^\d+\. ',line):
