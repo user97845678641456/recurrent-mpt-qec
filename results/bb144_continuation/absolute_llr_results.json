@@ -1,0 +1,15 @@
+{
+  "shots": 50000,
+  "p": 0.005,
+  "rounds": 12,
+  "ordering": "ascending absolute LLR",
+  "center": "hard decision",
+  "scoring": "prior",
+  "sweep": 8,
+  "failures_20m": 3490,
+  "failures_40m": 2433,
+  "only_40m_success": 1815,
+  "only_20m_success": 758,
+  "paired_exact_p": 4.296356304412653e-99,
+  "checkpoint_sha256": "57157da3e387f689c0bccd540e68c65271b1c724442e2309fa4553b72bd1bd14"
+}

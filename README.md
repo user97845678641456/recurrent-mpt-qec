@@ -68,3 +68,7 @@ python scripts/benchmark_speed.py --output runs/speed --workers 4 8 16 32
 ## Sources and attribution
 
 [THIRD_PARTY.md](THIRD_PARTY.md) records upstream projects and rights. CrossMPT runtime sources are pinned and fetched separately. This project adapts CrossMPT and recurrent measurement-history processing, and combines them with CS8; it does not claim those components as original inventions. Only the report-related implementation and artifacts are included; exploratory research directories are excluded.
+
+### BB144 continuation
+
+At p=0.005, absolute-LLR CS8 on 50,000 paired frames gives 6.980% FER at 20M samples and 4.866% at 40M. See [results](results/bb144_continuation/absolute_llr_results.json) and the [40M checkpoint](checkpoints/bb144_40m.pt).

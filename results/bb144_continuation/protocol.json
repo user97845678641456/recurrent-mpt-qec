@@ -1,0 +1,35 @@
+{
+  "source": "F:\\pythoncode\\temp\\ai for qec\\bb_recurrent_graph\\bb144_noaux_extended_20m",
+  "source_last_sha256": "a4a93076f1a95b2fea1505219daa660451034b774dc8e19076589d379c67bae3",
+  "source_best_sha256": "539f12c14ec6504fc258e6ac5695f90a15ea84af62af3691790c5737958a4dd3",
+  "source_validation": {
+    "0.003": 0.938123342991895,
+    "0.004": 1.3246785748653083,
+    "0.005": 1.6781138071042239,
+    "0.006": 2.073098400770133
+  },
+  "config": {
+    "command": "train",
+    "code": "bb144",
+    "device": "cuda",
+    "samples": 40000000,
+    "initialize": null,
+    "output": "F:\\pythoncode\\temp\\ai for qec\\bb_recurrent_graph\\bb144_noaux_extended_40m",
+    "seed": 21801259,
+    "lr": 0.0003,
+    "schedule": "two_stage",
+    "batch": 64,
+    "validation_shots": 1024,
+    "eval_every": 100000,
+    "plateau_patience": 0,
+    "plateau_min_samples": 10000000,
+    "plateau_relative": 0.002
+  },
+  "retained": "Full model, EMA, AdamW moments, training sampler RNG, noise chooser RNG, CPU and CUDA RNG; original validation set",
+  "selection": "Minimum original independent validation mean normalized BCE; test never used for selection",
+  "stop": {
+    "target_samples": 40000000,
+    "plateau_patience": 0
+  },
+  "evaluation": "Fresh 50k p=.005 frames, same data for frozen source and selected continued MPT+CS8; no BP; per-frame and per-observable counts"
+}

@@ -367,6 +367,22 @@ BB144 & 2.35 & 11.32 & 10.52 \\
 在上述硬件与64块批量配置下，MPT+CS8的吞吐量达到32进程BP+CS8的3.20至6.38倍，体现出该实现的批量解码效率。
 
 
+\FloatBarrier\section{补充实验：BB144 续训}
+
+BB144 续训至累计 4000 万样本。两版权重在同一批 50000 帧上配对评测，采用 12 轮含噪测量，p=0.005。CS8 从硬判决出发，按 LLR 绝对值升序选择主元，按信道先验为候选评分。
+
+
+\begin{table}[htbp]\centering\small\setlength{\tabcolsep}{1.6mm}\renewcommand{\arraystretch}{1.25}\begin{tabular}{@{}>{\centering\arraybackslash}p{50.13mm}>{\centering\arraybackslash}p{50.13mm}>{\centering\arraybackslash}p{50.13mm}@{}}
+\toprule
+\textbf{训练样本数} & \textbf{失败帧数} & \textbf{逻辑帧失败率} \\
+\midrule
+2000 万 & 3490 & 6.980\% \\
+4000 万 & 2433 & 4.866\% \\
+\bottomrule\end{tabular}\end{table}
+
+逻辑帧失败率下降 2.114 个百分点，相对降低 30.3\%。此补充实验使用独立测试批次及上述排序设置，主实验保留其原始评测协议。
+
+
 \FloatBarrier\section*{参考文献与代码来源}
 
 本项目代码与实验材料：\href{https://github.com/user97845678641456/recurrent-mpt-qec}{github.com/user97845678641456/recurrent-mpt-qec}。仓库提供模型权重、测试数据、实验结果及复现命令。
