@@ -12,7 +12,7 @@
 
 电路生成来源：https://github.com/jblue1/ml_bb_decoding ，固定提交`c6c97a9e23918fe561c54e916ebadd396897c728`。
 
-论文：Blue et al., Machine Learning Decoding of Circuit-Level Noise for Bivariate Bicycle Codes, Quantum10,2149(2026)。本仓库保留研究生成的Stim电路和矩阵，明确其来源，不包含作者整个项目或将其代码重新授权。BB72/144使用原公开逻辑算子；BB90采用同一调度方法推广和独立验证的逻辑算子。矩阵与电路生成数据不等同于本项目独创的码构造。
+论文：Blue et al., Machine Learning Decoding of Circuit-Level Noise for Bivariate Bicycle Codes, Quantum10,2149(2026)。本仓库保留研究生成的Stim电路和矩阵，明确其来源，不包含作者整个项目或将其代码重新授权。BB72/144使用原公开逻辑算子。矩阵与电路生成数据不等同于本项目独创的码构造。
 
 ## 软件和其他思想来源
 

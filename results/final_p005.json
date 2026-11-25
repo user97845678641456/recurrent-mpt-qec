@@ -1,0 +1,90 @@
+{
+  "bb72_r6": {
+    "p": 0.005,
+    "rounds": 6,
+    "first": 5000,
+    "stop": 8000,
+    "shots": 3000,
+    "large_mixed": {
+      "shots": 50000,
+      "fail": 3622
+    },
+    "relay_invalid": 0,
+    "models": {
+      "mpt": {
+        "fail": 209,
+        "mpt_only_success": 0,
+        "baseline_only_success": 0,
+        "paired_p": 1.0
+      },
+      "relay_bp": {
+        "fail": 361,
+        "mpt_only_success": 199,
+        "baseline_only_success": 47,
+        "paired_p": 1.9174153193454082e-23
+      },
+      "spa_cs8": {
+        "fail": 438,
+        "mpt_only_success": 262,
+        "baseline_only_success": 33,
+        "paired_p": 2.05592310871653e-45
+      },
+      "spa_cs60": {
+        "fail": 390,
+        "mpt_only_success": 219,
+        "baseline_only_success": 38,
+        "paired_p": 4.2331314892201764e-32
+      },
+      "tesseract": {
+        "fail": 257,
+        "mpt_only_success": 114,
+        "baseline_only_success": 66,
+        "paired_p": 0.0004284359145340105
+      }
+    }
+  },
+  "bb144": {
+    "p": 0.005,
+    "rounds": 12,
+    "first": 5000,
+    "stop": 8000,
+    "shots": 3000,
+    "large_mixed": {
+      "shots": 45000,
+      "fail": 1058
+    },
+    "relay_invalid": 42,
+    "models": {
+      "mpt": {
+        "fail": 59,
+        "mpt_only_success": 0,
+        "baseline_only_success": 0,
+        "paired_p": 1.0
+      },
+      "relay_bp": {
+        "fail": 105,
+        "mpt_only_success": 76,
+        "baseline_only_success": 30,
+        "paired_p": 9.102659374333861e-06
+      },
+      "spa_cs8": {
+        "fail": 327,
+        "mpt_only_success": 288,
+        "baseline_only_success": 20,
+        "paired_p": 5.320482919185403e-62
+      },
+      "spa_cs60": {
+        "fail": 322,
+        "mpt_only_success": 283,
+        "baseline_only_success": 20,
+        "paired_p": 1.2158628703832051e-60
+      },
+      "tesseract": {
+        "fail": 66,
+        "mpt_only_success": 44,
+        "baseline_only_success": 37,
+        "paired_p": 0.5052364407669357
+      }
+    }
+  }
+}

@@ -73,8 +73,8 @@ def convert(source):
             # Use vector figures where available.
             path=REPORT/image.group(2);vector=path.with_suffix('.pdf')
             path=vector if vector.exists() else path
-            placement='H' if any(v in path.name for v in ['model_03_logits_head','parallel_throughput']) else 'htbp'
-            out.append(r'\begin{figure}['+placement+r']\centering\includegraphics[width=\linewidth]{'+path.relative_to(REPORT).as_posix()+r'}\caption{'+inline(image.group(1))+'}'+r'\end{figure}')
+            placement='H' if path.name.startswith('model_') else 'htbp'
+            out.append(r'\begin{figure}['+placement+r']\centering\includegraphics[width=\linewidth,height=.32\textheight,keepaspectratio]{'+path.relative_to(REPORT).as_posix()+r'}\caption{'+inline(image.group(1))+'}'+r'\end{figure}')
             i+=1;continue
         if re.match(r'^\d+\. ',line):
             out.append(r'\noindent '+inline(line)+r'\par\smallskip');i+=1;continue
@@ -91,7 +91,7 @@ PREAMBLE=r'''\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
 \definecolor{accent}{HTML}{194D68}
 \hypersetup{colorlinks=true,linkcolor=accent,urlcolor=accent,pdftitle={循环MPT与CS8融合的BB码量子纠错解码技术报告},pdfauthor={钟路安}}
 \setlength{\parindent}{2em}\setlength{\parskip}{0.2em}
-\linespread{1.17}\setlength{\emergencystretch}{3em}
+\linespread{1.11}\setlength{\emergencystretch}{3em}
 \ctexset{section={format=\Large\bfseries\color{accent}},subsection={format=\large\bfseries}}
 \pagestyle{fancy}\fancyhf{}\fancyhead[L]{\small 循环MPT与CS8融合量子纠错解码}\fancyhead[R]{\small 技术报告}\fancyfoot[C]{\thepage}
 \setlength{\headheight}{15pt}\renewcommand{\headrulewidth}{0.3pt}
@@ -102,7 +102,7 @@ PREAMBLE=r'''\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
 {\LARGE\bfseries 面向多轮含噪测量的循环交叉注意力\\[0.25em]与有序统计融合量子纠错解码}\par
 \vspace{0.7em}{\large 钟路安}\par
 西安交通大学数学与统计学院\par
-\vspace{0.35em}{\small AI for Science 项目技术报告\quad 2026年11月16日}
+\vspace{0.35em}{\small AI for Science 项目技术报告\quad 2026年11月26日}
 \par\vspace{0.4em}{\small 项目代码：\url{https://github.com/user97845678641456/recurrent-mpt-qec}}
 \end{center}
 \vspace{0.5em}
@@ -110,7 +110,7 @@ PREAMBLE=r'''\documentclass[UTF8,a4paper,zihao=-4,fontset=fandol]{ctexart}
 
 def main():
     OUT.mkdir(parents=True,exist_ok=True);BUILD.mkdir(parents=True,exist_ok=True)
-    text=(REPORT/'technical_report.md').read_text(encoding='utf-8')
+    text=(REPORT/'technical_report.md').read_text(encoding='utf-8-sig')
     source=PREAMBLE+convert(text)+'\n\\end{document}\n'
     # The full report is distributed alongside its vector figure assets.
     tex=REPORT/'technical_report.tex';tex.write_text(source,encoding='utf-8')

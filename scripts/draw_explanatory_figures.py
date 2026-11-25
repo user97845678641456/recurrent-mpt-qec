@@ -35,7 +35,7 @@ def save(fig,name):
     plt.close(fig)
 
 def bb():
-    a=np.load(ROOT/'assets/bb72/code_matrices.npz');hx=a['Hx'];hz=a['Hz'];assert not (hx@hz.T%2).any()
+    a=np.load(ROOT/'assets/bb72_r6/code_matrices.npz');hx=a['Hx'];hz=a['Hz'];assert not (hx@hz.T%2).any()
     support=np.flatnonzero(hx[0]);assert np.array_equal(support,[1,2,18,39,42,48])
     fig,ax=canvas(11.3)
     text(ax,9,10.85,'BB72：一个实际的六体校验如何连接数据比特',12,weight='bold')
@@ -61,7 +61,7 @@ def bb():
         ax.add_patch(Circle((x,1),.16,facecolor='white',edgecolor=BLUE,linewidth=1.2));text(ax,x,.5,r'$q_{'+str(q)+'}$',10)
     text(ax,9,.05,'连线来自实际 '+r'$H_X$'+' 矩阵；索引块用于说明连接，不代表芯片位置或 CNOT 布线。',8,color=GRAY)
     save(fig,'bb72_check_structure')
-    return dict(code='bb72',matrix='Hx',row=0,qubit_indices=support.tolist(),row_weight=int(hx[0].sum()),Hx_HzT_zero=True)
+    return dict(code='bb72_r6',matrix='Hx',row=0,qubit_indices=support.tolist(),row_weight=int(hx[0].sum()),Hx_HzT_zero=True)
 
 def css():
     fig,ax=canvas(10.2)
@@ -123,7 +123,7 @@ def parity_circuit():
 
 def main():
     record=bb();css();parity_circuit();syndrome()
-    (OUT/'figure_notes.json').write_text(json.dumps(dict(BB=record,CSS='Conceptual physical Pauli representation; not DEM coordinates',syndrome='Single-check conceptual traces, not sampled experimental data',model='Matches 2-layer4-head d64 ungated recurrent MPT and prior-scored signed-order CS8'),indent=2))
+    (OUT/'figure_notes.json').write_text(json.dumps(dict(BB=record,CSS='Conceptual physical Pauli representation; not DEM coordinates',syndrome='Single-check conceptual traces, not sampled experimental data',model='96-dimensional, four-head recurrent MPT with shared-fault edges and mixed-score absolute-LLR CS8'),indent=2))
     print('FOUR_VECTOR_FIGURES_CREATED',OUT)
 
 if __name__=='__main__':main()

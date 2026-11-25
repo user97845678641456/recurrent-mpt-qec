@@ -1,6 +1,6 @@
 {
   "BB": {
-    "code": "bb72",
+    "code": "bb72_r6",
     "matrix": "Hx",
     "row": 0,
     "qubit_indices": [
@@ -16,5 +16,5 @@
   },
   "CSS": "Conceptual physical Pauli representation; not DEM coordinates",
   "syndrome": "Single-check conceptual traces, not sampled experimental data",
-  "model": "Matches 2-layer4-head d64 ungated recurrent MPT and prior-scored signed-order CS8"
+  "model": "96-dimensional, four-head recurrent MPT with shared-fault edges and mixed-score absolute-LLR CS8"
 }

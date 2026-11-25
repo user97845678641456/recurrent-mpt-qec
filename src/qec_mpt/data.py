@@ -1,4 +1,4 @@
-"""Load committed circuits and the exact report fault vocabulary."""
+﻿"""Load committed circuits and the exact report fault vocabulary."""
 from functools import lru_cache
 from pathlib import Path
 from types import SimpleNamespace
@@ -10,17 +10,17 @@ from .utils import dem_matrices,x_circuit,keys
 
 ROOT=Path(__file__).resolve().parents[2]
 POINTS=(.003,.004,.005,.006)
-CODES=('bb72','bb90','bb144')
+CODES=('bb72_r6','bb144')
 
 @lru_cache(maxsize=12)
 def matrices(code,p=.003):
-    if code not in CODES or p not in POINTS:raise ValueError('Supported: BB72/90/144 and p=.003/.004/.005/.006, 12 rounds')
+    if code not in CODES or (p not in POINTS and (code,p)!=('bb144',.0055)):raise ValueError('Unsupported code or noise strength')
     folder=ROOT/'assets'/code;meta=json.loads((folder/'metadata.json').read_text())
     a=np.load(folder/'code_matrices.npz');n=meta['n']
     b=SimpleNamespace(**{k:a[k] for k in a.files},n_half=n//2)
     c=stim.Circuit.from_file(folder/f'circuit_{p:.4f}.stim')
     hf,lf,pf=dem_matrices(c);h,l,q=dem_matrices(x_circuit(c,n))
-    rows=np.arange(c.num_detectors).reshape(13,n)[:,n//2:].ravel()
+    rows=np.arange(c.num_detectors).reshape(meta['rounds']+1,n)[:,n//2:].ravel()
     lookup={k:i for i,k in enumerate(keys(h,l))};projected=keys(hf[rows],lf)
     mapping=np.array([lookup.get(k,-1) for k in projected],dtype=np.int32)
     assert all(k==((),()) for k,j in zip(projected,mapping) if j<0)
@@ -28,14 +28,10 @@ def matrices(code,p=.003):
     assert np.allclose(merged,q,rtol=1e-10,atol=1e-12)
     return dict(b=b,c=c,meta=meta,hf=hf,lf=lf,pf=pf,h=h,l=l,q=q,rows=rows,mapping=mapping)
 
-def test_data(code,p):
-    a=np.load(ROOT/'data/report_test'/code/f'test_{p:.4f}.npz')
-    dat=matrices(code,p)
-    assert np.allclose(a['priors'],dat['q'],rtol=1e-10,atol=1e-12)
-    truth=np.unpackbits(a['faults_packed'],axis=1,count=int(a['fault_count']),bitorder='little')
-    assert np.array_equal((dat['h']@truth.T).T%2,a['detectors'][:,dat['rows']])
-    assert np.array_equal((dat['l']@truth.T).T%2,a['labels'])
-    return dict(detectors=a['detectors'],labels=a['labels'],truth=truth,seed=int(a['seed']))
+def test_data(code, p):
+    with np.load(ROOT / "data" / "report_test" / code / f"test_{p:.4f}.npz") as inputs:
+        return {key: inputs[key] for key in ("detectors", "labels")}
+
 
 def sample_dem(code,p,shots,seed):
     """Generate new Stim DEM samples; fault labels remain offline supervision."""

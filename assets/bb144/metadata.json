@@ -22,7 +22,6 @@
   "output_detectors": 936,
   "fault_variables": 8784,
   "rank_H": 930,
-  "parameters": 268577,
   "circuit": {
     "noisy_rounds": 12,
     "frames": 13,
@@ -36,5 +35,10 @@
   },
   "training_loss": "fault_BCE_only",
   "initialization": "from scratch, then full-state continuation",
-  "training_samples": 6000000
+  "training_samples": 60000000,
+  "selected_samples": 60000000,
+  "width": 96,
+  "depth": 6,
+  "fault_neighbors": true,
+  "checkpoint_sha256": "ced530e93c1661a0ebda484f5899dd5c532327b525378345a8f1effce4cc5073"
 }

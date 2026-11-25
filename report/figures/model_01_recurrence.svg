@@ -6,7 +6,7 @@
   <rdf:RDF xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
    <cc:Work>
     <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-    <dc:date>2026-11-16T11:06:38.654662</dc:date>
+    <dc:date>2026-11-26T07:08:17.733108</dc:date>
     <dc:format>image/svg+xml</dc:format>
     <dc:creator>
      <cc:Agent>
@@ -40,17 +40,17 @@ Q 35.38368 65.64096 35.38368 68.95872
 L 35.38368 90.24768
 Q 35.38368 93.56544 38.77056 93.56544
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_3">
     <path d="M 75.744 96.425212
 Q 75.744 99.646085 75.744 101.637119
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 77.744 97.637119
 L 75.744 101.637119
 L 73.744 97.637119
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_4">
     <path d="M 35.94816 141.25824
@@ -63,7 +63,7 @@ Q 32.56128 106.42176 32.56128 109.73952
 L 32.56128 137.94048
 Q 32.56128 141.25824 35.94816 141.25824
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_5">
     <path d="M 162.95616 93.56544
@@ -76,17 +76,17 @@ Q 159.56928 65.64096 159.56928 68.95872
 L 159.56928 90.24768
 Q 159.56928 93.56544 162.95616 93.56544
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_6">
     <path d="M 199.9296 96.425212
 Q 199.9296 99.646085 199.9296 101.637119
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 201.9296 97.637119
 L 199.9296 101.637119
 L 197.9296 97.637119
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_7">
     <path d="M 160.13376 141.25824
@@ -99,7 +99,7 @@ Q 156.74688 106.42176 156.74688 109.73952
 L 156.74688 137.94048
 Q 156.74688 141.25824 160.13376 141.25824
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_8">
     <path d="M 402.86016 93.56544
@@ -112,17 +112,17 @@ Q 399.47328 65.64096 399.47328 68.95872
 L 399.47328 90.24768
 Q 399.47328 93.56544 402.86016 93.56544
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_9">
     <path d="M 439.8336 96.425212
 Q 439.8336 99.646085 439.8336 101.637119
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 441.8336 97.637119
 L 439.8336 101.637119
 L 437.8336 97.637119
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #657581; stroke: #657581; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_10">
     <path d="M 400.03776 141.25824
@@ -135,37 +135,37 @@ Q 396.65088 106.42176 396.65088 109.73952
 L 396.65088 137.94048
 Q 396.65088 141.25824 400.03776 141.25824
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_11">
     <path d="M 122.487588 123.84
 Q 137.835756 123.84 151.954086 123.84
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 147.954086 121.84
 L 151.954086 123.84
 L 147.954086 125.84
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_12">
     <path d="M 246.678184 123.84
 Q 270.490166 123.84 293.072312 123.84
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 289.072312 121.84
 L 293.072312 123.84
 L 289.072312 125.84
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_13">
     <path d="M 342.639267 123.84
 Q 367.863874 123.84 391.858643 123.84
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 387.858643 121.84
 L 391.858643 123.84
 L 387.858643 125.84
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #236b9b; stroke: #236b9b; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_14">
     <path d="M 51.47136 204.84864
@@ -178,7 +178,7 @@ Q 48.08448 172.77696 48.08448 176.09472
 L 48.08448 201.53088
 Q 48.08448 204.84864 51.47136 204.84864
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_15">
     <path d="M 345.00096 204.84864
@@ -191,54 +191,54 @@ Q 341.61408 172.77696 341.61408 176.09472
 L 341.61408 201.53088
 Q 341.61408 204.84864 345.00096 204.84864
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #edf4f8; stroke: #236b9b; stroke-linejoin: miter"/>
    </g>
    <g id="patch_16">
     <path d="M 36.406455 188.8128
 Q 39.758218 188.8128 41.880142 188.8128
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 37.880142 186.8128
 L 41.880142 188.8128
 L 37.880142 190.8128
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #287f75; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #287f75; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="patch_17">
     <path d="M 496.102444 188.8128
 Q 494.780822 188.8128 494.689037 188.8128
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
     <path d="M 498.689037 190.8128
 L 494.689037 188.8128
 L 498.689037 186.8128
 z
-" clip-path="url(#p10009bfbcf)" style="fill: #287f75; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
+" clip-path="url(#p506cefe2a1)" style="fill: #287f75; stroke: #287f75; stroke-width: 1.1; stroke-linecap: round"/>
    </g>
    <g id="line2d_1">
     <path d="M 75.744 140.4288
 L 33.408 140.4288
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="line2d_2">
     <path d="M 33.408 140.4288
 L 33.408 188.8128
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="line2d_3">
     <path d="M 439.8336 140.4288
 L 499.104 140.4288
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="line2d_4">
     <path d="M 499.104 140.4288
 L 499.104 188.8128
-" clip-path="url(#p10009bfbcf)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
+" clip-path="url(#p506cefe2a1)" style="fill: none; stroke: #287f75; stroke-width: 1.1; stroke-linecap: square"/>
    </g>
    <g id="text_1">
     <text style="font-weight: 700; font-size: 13px; font-family: 'Microsoft YaHei'; text-anchor: middle; fill: #233647" x="259.2" y="21.804718" transform="rotate(-0 259.2 21.804718)">01  循环整体：逐帧更新隐变量</text>
    </g>
    <g id="text_2">
-    <!-- 零初始化 $V_{-1}=C_{-1}=0$；13 帧共用同一套 MPT 参数 -->
-    <g style="fill: #233647" transform="translate(138.345 41.022802)">
+    <!-- 零初始化 $V_{-1}=C_{-1}=0$；同一窗口的各帧共用同一套 MPT 参数 -->
+    <g style="fill: #233647" transform="translate(114.5625 41.022802)">
      <text>
       <tspan x="0" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">零</tspan>
       <tspan x="10.5" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">初</tspan>
@@ -246,22 +246,25 @@ L 499.104 188.8128
       <tspan x="31.5" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">化</tspan>
       <tspan x="42" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
       <tspan x="102.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">；</tspan>
-      <tspan x="113.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">1</tspan>
-      <tspan x="119.227734" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">3</tspan>
-      <tspan x="125.385205" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
-      <tspan x="128.492139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">帧</tspan>
-      <tspan x="138.992139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">共</tspan>
-      <tspan x="149.492139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">用</tspan>
-      <tspan x="159.992139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">同</tspan>
-      <tspan x="170.492139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">一</tspan>
-      <tspan x="180.992139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">套</tspan>
-      <tspan x="191.492139" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
-      <tspan x="194.599072" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">M</tspan>
-      <tspan x="205.108105" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">P</tspan>
-      <tspan x="211.532178" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">T</tspan>
-      <tspan x="217.551221" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
-      <tspan x="220.658154" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">参</tspan>
-      <tspan x="231.158154" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">数</tspan>
+      <tspan x="113.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">同</tspan>
+      <tspan x="123.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">一</tspan>
+      <tspan x="134.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">窗</tspan>
+      <tspan x="144.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">口</tspan>
+      <tspan x="155.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">的</tspan>
+      <tspan x="165.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">各</tspan>
+      <tspan x="176.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">帧</tspan>
+      <tspan x="186.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">共</tspan>
+      <tspan x="197.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">用</tspan>
+      <tspan x="207.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">同</tspan>
+      <tspan x="218.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">一</tspan>
+      <tspan x="228.570264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">套</tspan>
+      <tspan x="239.070264" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
+      <tspan x="242.177197" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">M</tspan>
+      <tspan x="252.68623" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">P</tspan>
+      <tspan x="259.110303" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">T</tspan>
+      <tspan x="265.129346" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647"> </tspan>
+      <tspan x="268.236279" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">参</tspan>
+      <tspan x="278.736279" y="-0.1875" style="font-size: 10.5px; font-family: 'Microsoft YaHei'; fill: #233647">数</tspan>
       <tspan x="45.106934" y="-0.1875" style="font-style: italic; font-size: 10.5px; font-family: 'STIXGeneral'; fill: #233647">V</tspan>
       <tspan x="70.919592" y="-0.1875" style="font-style: italic; font-size: 10.5px; font-family: 'STIXGeneral'; fill: #233647">C</tspan>
       <tspan x="51.52243" y="1.2" style="font-size: 7.35px; font-family: 'STIXGeneral'; fill: #233647">−</tspan>
@@ -333,14 +336,13 @@ L 499.104 188.8128
     </g>
    </g>
    <g id="text_9">
-    <!-- $x_{12},\ p$ -->
-    <g style="fill: #236b9b" transform="translate(424.6886 83.183278)">
+    <!-- $x_{T},\ p$ -->
+    <g style="fill: #236b9b" transform="translate(426.7036 83.183278)">
      <text>
       <tspan x="0" y="-0.265625" style="font-style: italic; font-size: 13px; font-family: 'STIXGeneral'; fill: #236b9b">x</tspan>
-      <tspan x="23.701277" y="-0.265625" style="font-style: italic; font-size: 13px; font-family: 'STIXGeneral'; fill: #236b9b">p</tspan>
-      <tspan x="5.772003" y="1.454688" style="font-size: 9.1px; font-family: 'STIXGeneral'; fill: #236b9b">1</tspan>
-      <tspan x="10.322003" y="1.454688" style="font-size: 9.1px; font-family: 'STIXGeneral'; fill: #236b9b">2</tspan>
-      <tspan x="15.445441" y="-0.265625" style="font-size: 13px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
+      <tspan x="19.660875" y="-0.265625" style="font-style: italic; font-size: 13px; font-family: 'STIXGeneral'; fill: #236b9b">p</tspan>
+      <tspan x="5.772003" y="1.454688" style="font-style: italic; font-size: 9.1px; font-family: 'STIXGeneral'; fill: #236b9b">T</tspan>
+      <tspan x="11.405038" y="-0.265625" style="font-size: 13px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
      </text>
     </g>
    </g>
@@ -386,8 +388,8 @@ L 499.104 188.8128
     </g>
    </g>
    <g id="text_12">
-    <!-- 保存各帧隐变量 $C_0,C_1,\ldots,C_{12}$ -->
-    <g style="fill: #236b9b" transform="translate(105.7404 191.842097)">
+    <!-- 保存各帧隐变量 $C_0,C_1,\ldots,C_T$ -->
+    <g style="fill: #236b9b" transform="translate(107.4454 191.842097)">
      <text>
       <tspan x="0" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b">保</tspan>
       <tspan x="11" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b">存</tspan>
@@ -402,18 +404,17 @@ L 499.104 188.8128
       <tspan x="127.612845" y="-0.78125" style="font-style: italic; font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">C</tspan>
       <tspan x="87.591888" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">0</tspan>
       <tspan x="103.601669" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">1</tspan>
-      <tspan x="134.94985" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">1</tspan>
-      <tspan x="138.79985" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">2</tspan>
       <tspan x="91.926263" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
       <tspan x="107.936044" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
       <tspan x="112.274445" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">…</tspan>
       <tspan x="123.274445" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
+      <tspan x="134.94985" y="0.671875" style="font-style: italic; font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">T</tspan>
      </text>
     </g>
    </g>
    <g id="text_13">
-    <!-- 最终隐变量 $V_{12},C_{12}$ -->
-    <g style="fill: #236b9b" transform="translate(370.7244 191.842097)">
+    <!-- 最终隐变量 $V_T,C_T$ -->
+    <g style="fill: #236b9b" transform="translate(374.1344 191.842097)">
      <text>
       <tspan x="0" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b">最</tspan>
       <tspan x="11" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b">终</tspan>
@@ -422,12 +423,10 @@ L 499.104 188.8128
       <tspan x="44" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b">量</tspan>
       <tspan x="55" y="-0.78125" style="font-size: 11px; font-family: 'Microsoft YaHei'; fill: #236b9b"> </tspan>
       <tspan x="58.254883" y="-0.78125" style="font-style: italic; font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">V</tspan>
-      <tspan x="77.498651" y="-0.78125" style="font-style: italic; font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">C</tspan>
-      <tspan x="64.975876" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">1</tspan>
-      <tspan x="68.825876" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">2</tspan>
-      <tspan x="84.835657" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">1</tspan>
-      <tspan x="88.685657" y="0.671875" style="font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">2</tspan>
-      <tspan x="73.160251" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
+      <tspan x="74.079849" y="-0.78125" style="font-style: italic; font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">C</tspan>
+      <tspan x="64.975876" y="0.671875" style="font-style: italic; font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">T</tspan>
+      <tspan x="81.416855" y="0.671875" style="font-style: italic; font-size: 7.7px; font-family: 'STIXGeneral'; fill: #236b9b">T</tspan>
+      <tspan x="69.741449" y="-0.78125" style="font-size: 11px; font-family: 'STIXGeneral'; fill: #236b9b">,</tspan>
      </text>
     </g>
    </g>
@@ -437,7 +436,7 @@ L 499.104 188.8128
   </g>
  </g>
  <defs>
-  <clipPath id="p10009bfbcf">
+  <clipPath id="p506cefe2a1">
    <rect x="5.184" y="4.9536" width="508.032" height="237.7728"/>
   </clipPath>
  </defs>

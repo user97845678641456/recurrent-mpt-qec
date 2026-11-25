@@ -1,0 +1,41 @@
+{
+  "code": "bb72_r6",
+  "n": 72,
+  "k": 12,
+  "profile": {
+    "l": 6,
+    "m": 6,
+    "a": [
+      3,
+      -1,
+      -2
+    ],
+    "b": [
+      1,
+      2,
+      -3
+    ],
+    "k": 12
+  },
+  "rounds": 6,
+  "detectors": 504,
+  "circuit": {
+    "noisy_rounds": 6,
+    "frames": 7,
+    "basis": "author X-memory; logical X readout",
+    "initial": "author ideal preparation and ideal initial check round",
+    "terminal": "author ideal final check round and ideal X readout",
+    "retained_detectors": 504,
+    "source_sha256": "c0fae26b370f2e71a4e4bb180f541b0377f3343dc07df8be626eb66d019e7d37",
+    "logical_sha256": "e05a1504fe16bbf9ff9870e778b192db575b8640aa9e8910314ce60764a37409",
+    "alignment": "calls unchanged author Code.create_syndrome_measurement_circuit and gate helpers; official A/B ordering and saved logical X operators"
+  },
+  "training_loss": "fault_BCE_only",
+  "initialization": "from scratch",
+  "training_samples": 40000000,
+  "selected_samples": 39900032,
+  "width": 96,
+  "depth": 4,
+  "fault_neighbors": true,
+  "checkpoint_sha256": "987400f7436250cea8c7fd11143c1f4922e096cda37757c963fa1a7e31ab969f"
+}
